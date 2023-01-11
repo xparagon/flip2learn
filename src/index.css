@@ -1,0 +1,43 @@
+:root {
+  background-color: white;
+  margin: 0 auto;
+  text-align: center; 
+  font-family: 'Roboto', sans-serif;
+
+}
+
+
+body {
+  display: inline-flex;
+  margin: 0;
+  
+}
+
+h1 {
+  font-size: 24px;
+  font-weight: 400;
+  margin: 0;
+  padding-bottom: 10px;
+}
+
+p {
+  font-weight: 300;
+  line-height: 1.0;
+  margin: 0;
+  padding-bottom: 0.5rem;
+}
+
+small {
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 1.0;
+  margin: 0;
+  padding-bottom: 0.5rem;
+}
+
+footer {
+  margin: 0;
+  padding: 0 10px;
+  font-size: 16px;
+  color: black;
+}
