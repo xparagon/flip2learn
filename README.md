@@ -11,7 +11,8 @@ What is planned:
 - a way to export and import word-lists
 
 
-![The prototype](/docs/flip.png)
+
+<img src="/docs/flip.png" width="374" />
 
 Try it out at https://flip.fred.technology/
 
