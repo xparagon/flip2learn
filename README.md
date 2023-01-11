@@ -12,7 +12,7 @@ What is planned:
 
 
 
-<img src="/docs/flip.png" width="374" />
+<img src="./docs/flip.png" width="374" />
 
 Try it out at https://flip.fred.technology/
 
