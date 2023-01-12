@@ -16,5 +16,5 @@ What is planned:
 
 Try it out at https://flip.fred.technology/
 
-Give feedback and suggest features to me at 
-fredpallesen@gmail.com
+You may give feedback and suggest features to me at 
+fredpallesen@gmail.com or just add an Issue here.
