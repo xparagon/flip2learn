@@ -13,12 +13,10 @@ function SelectLabelLanguage({ languages, language, setLanguage }: SelectLabelLa
         <div className='select-label-language'>
             {languages.map((language, index) => {
                 return (
-                    <>
-                        <input type="radio" value={index + 1}
-                            checked={+language === index + 1}
-                            onChange={() => setLanguage(index + 1)} />
-                        <label>{languages[index]}</label>
-                    </>
+                    <button key={index} className="language-button"
+                        onClick={() => setLanguage(index + 1)}
+
+                    >{languages[index]}</button>
                 )
             })
             }

@@ -6,4 +6,13 @@ export interface Labels {
     words: string[],
     howToCheck: string[],
     howToProceed: string[],
+    titleEditing: string[],
+    doneEditing: string[],
 }
+
+export interface Word {
+    word: string,
+    meaning: string,
+    isKnown: boolean,
+}
+

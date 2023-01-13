@@ -9,11 +9,11 @@
 
 .logo {
   height: 200px;
-  padding: 20px;
+  padding: 10px;
   will-change: filter;
 }
 .logo:hover {
-  filter: drop-shadow(0 0 16px #ffab40);
+  filter: drop-shadow(0 0 8px #ffab40);
 }
 
 .box {
@@ -44,7 +44,7 @@
 
 .button {
   width: 120px;
-  height: 40px;
+  height: 48px;
   border: 1px solid transparent;
   border-radius: 12px;
   background-color: #ffab40;
@@ -88,10 +88,28 @@
 }
 */
 
+.status-bar {
+  margin-bottom: 10px;
+}
+
 .count-up {
-  margin-top: 10px;
+  margin-top: -10px;
 }
 
 .about-box {
   margin-top: 5px;
+}
+
+.language-button {
+  height: 24px;
+  margin: 0 10px;
+  padding: 0 10px;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  color: gray;
+
+}
+
+.edit-wordlist {
+  max-width: 350px;
 }

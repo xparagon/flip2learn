@@ -19,11 +19,13 @@ function StatusBar({ countNo, countYes, totalWords }: StatusBarProps) {
     }
 
     return (
-        <div style={{ display: 'flex' }}>
-            <div className='bar isNo' style={barNo}></div>
-            <div className='bar isUnknown' style={barUnknown}></div>
-            <div className='bar isYes' style={barYes}></div>
-        </div >
+        <div className='status-bar'>
+            <div style={{ display: 'flex' }}>
+                <div className='bar isNo' style={barNo}></div>
+                <div className='bar isUnknown' style={barUnknown}></div>
+                <div className='bar isYes' style={barYes}></div>
+            </div >
+        </div>
     );
 }
 export default StatusBar;
