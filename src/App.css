@@ -39,7 +39,7 @@
 .button-row {
   display: flex;
   justify-content: space-evenly;
-  margin: 20px 10px;
+  margin: 10px 10px 20px 10px;
 }
 
 .button {
@@ -77,4 +77,21 @@
 
 .result {
   font-size: 24px;
+}
+
+/*
+.select-label-language, 
+.flip-word, 
+.how-to-use, 
+.report-results,
+.count-up {
+}
+*/
+
+.count-up {
+  margin-top: 10px;
+}
+
+.about-box {
+  margin-top: 5px;
 }
