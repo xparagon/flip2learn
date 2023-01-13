@@ -34,7 +34,8 @@ function App() {
       'Натисніть зелений, якщо ви знаєте це слово, червоний, якщо ні.',
       'انقر فوق الأخضر إذا كنت تعرف هذه الكلمة ، وإذا لم تكن تعرفها باللون الأحمر.', ''],
     titleEditing: ['Edit the wordlist', 'Відредагуйте список слів', 'قم بتحرير قائمة الكلمات', '👄👄 → 👄👄'],
-    doneEditing: ['Done', 'Готово', 'فعله', '♦'],
+    doneEditing: ['Done', 'Готово', 'فعله', '✅ ❌'],
+    doneEditingAndCleanup: ['Remove ✔', 'Видалити ✔', 'قم بإزالة ✔', '✂ ✅'],
   }
 
 
@@ -159,20 +160,30 @@ function App() {
   }, [])
 
   function openEdit() {
-    const moreWords = [{ word: '', meaning: '', isKnown: false }, { word: '', meaning: '', isKnown: false }, { word: '', meaning: '', isKnown: false }, { word: '', meaning: '', isKnown: false }, { word: '', meaning: '', isKnown: false }, ...words]
+    const moreWords = [...words, { word: '', meaning: '', isKnown: false }, { word: '', meaning: '', isKnown: false }, { word: '', meaning: '', isKnown: false }, { word: '', meaning: '', isKnown: false }, { word: '', meaning: '', isKnown: false }]
     setWords(moreWords)
     setEdit(true)
   }
 
-  function closeEdit() {
+  function closeEdit(doCleanup: boolean) {
 
     const filtered = words.filter(word => !(word.word === '' || word.meaning === ''))
-    setWords(filtered)
-    const known = filtered.filter(word => word.isKnown).length;
-    const unknown = filtered.filter(word => !word.isKnown).length;
-    const score = Math.round(known / (filtered.length) * 100);
-    const result = { known, unknown, score, words: filtered.length };
-    localStorage.setItem("flip", JSON.stringify({ words: filtered, result }))
+    const knownWords = filtered.filter(word => word.isKnown);
+    const unknownWords = filtered.filter(word => !word.isKnown);
+
+    let newWordlist = []
+    if (doCleanup && knownWords.length !== 0) {
+      newWordlist = [...unknownWords]
+    } else {
+      newWordlist = [...unknownWords, ...knownWords]
+    }
+
+    setWords(newWordlist)
+    const known = newWordlist.filter(word => word.isKnown).length;
+    const unknown = newWordlist.filter(word => !word.isKnown).length;
+    const score = Math.round(known / (newWordlist.length) * 100);
+    const result = { known, unknown, score, words: newWordlist.length };
+    localStorage.setItem("flip", JSON.stringify({ words: newWordlist, result }))
     setEdit(false)
   }
 
@@ -190,7 +201,6 @@ function App() {
     const newWords = [...words] // copy of words
     newWords[index].meaning = e.target.value // change word
     setWords(newWords) // set new words
-
   }
 
   return (
@@ -199,40 +209,42 @@ function App() {
       {edit &&
         <div className='edit-wordlist'>
           <h2>{labels.titleEditing.at(language - 1)}</h2>
-          <table>
-            <tbody>
-              {words.map((line, index) => {
-                return (
-                  <tr key={index}>
-                    <td>
-                      {index + 1}:&nbsp;
-                    </td>
-                    <td>
-                      <input type="text"
-                        value={line.word}
-                        onChange={(e) => handleWordChange(e, index)}
-                      />
-                    </td>
-                    <td>
-                      <input type="text"
-                        value={line.meaning}
-                        onChange={(e) => handleMeaningChange(e, index)}
-                      />
-                    </td>
-                    <td>
-                      &nbsp;
-                      {line.isKnown ? '✅' : '❌'}
-                    </td>
-                  </tr>
-                )
-              })
-              }
-            </tbody>
-          </table>
+
+
+          {words.map((line, index) => {
+            return (
+              <div key={index} className='edit-definition'>
+
+                <div className='edit-word'>
+                  <div className='edit-nr'>
+                    {index + 1}.
+                  </div>
+                  <input type="text"
+                    value={line.word}
+                    onChange={(e) => handleWordChange(e, index)}
+                  />
+                </div>
+                <div className='edit-meaning'>
+                  <div className='edit-known'>
+                    {line.isKnown ? '✅' : '❌'}
+                  </div>
+                  <input type="text"
+                    value={line.meaning}
+                    onChange={(e) => handleMeaningChange(e, index)}
+                  />
+                </div>
+              </div>
+            )
+          })
+          }
+
           <div className="button-row">
             <button className='button'
-              onClick={() => closeEdit()}
+              onClick={() => closeEdit(false)}
             >{labels.doneEditing.at(language - 1)}</button>
+            <button className='button'
+              onClick={() => closeEdit(true)}
+            >{labels.doneEditingAndCleanup.at(language - 1)}</button>
           </div>
         </div>
       }
