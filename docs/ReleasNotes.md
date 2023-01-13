@@ -2,7 +2,9 @@
 
 ## Version 0.2 - 13.01.2023
 
-Refactored code: made components<br />
+Refactored code: made components.<br />
+Enabled editing of words and adding 5 new words.<br />
+Saving to localstorage.<br />
 <br />
 
 

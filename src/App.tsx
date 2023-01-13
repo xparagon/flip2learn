@@ -106,8 +106,6 @@ function App() {
   }
 
   function nextWord() {
-    console.log('word nr ', count, 'is known', words[count].isKnown, '');
-
     setCheck(false)
     if (count === words.length - 1) {
       calculateResult()
@@ -146,15 +144,12 @@ function App() {
     const unknown = words.filter(word => !word.isKnown).length;
     const score = Math.round(known / (words.length) * 100);
     const result = { known, unknown, score, words: words.length };
-    console.log('score:', result);
     localStorage.setItem("flip", JSON.stringify({ words, result }))
   }
 
   useEffect(() => {
     const saved = localStorage.getItem("flip");
-    console.log('saved', saved)
     if (!saved) {
-      console.log('init saved')
       setWords(startwords)
     } else {
       const parsed = JSON.parse(saved)
@@ -172,27 +167,18 @@ function App() {
   function closeEdit() {
 
     const filtered = words.filter(word => !(word.word === '' || word.meaning === ''))
-    console.log('filtered', filtered);
-
     setWords(filtered)
-
     const known = filtered.filter(word => word.isKnown).length;
     const unknown = filtered.filter(word => !word.isKnown).length;
     const score = Math.round(known / (filtered.length) * 100);
     const result = { known, unknown, score, words: filtered.length };
-
-
     localStorage.setItem("flip", JSON.stringify({ words: filtered, result }))
-
     setEdit(false)
-
   }
 
   function handleWordChange(e: React.ChangeEvent<{ value: string }>, index: number) { // e = event, index = index of word
-    console.log('handleWordChange', e.target.value, index);
     const newWords = [...words] // copy of words
     newWords[index].word = e.target.value // change word
-    console.log('newWords', newWords);
     setWords(newWords) // set new words
 
     /*
@@ -201,8 +187,6 @@ function App() {
   }
 
   function handleMeaningChange(e: React.ChangeEvent<{ value: string }>, index: number) { // e = event, index = index of word
-    console.log('handleMeaningChange', e.target.value, index);
-
     const newWords = [...words] // copy of words
     newWords[index].meaning = e.target.value // change word
     setWords(newWords) // set new words
