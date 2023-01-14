@@ -43,8 +43,7 @@ function App() {
     { word: 'Norsk', meaning: 'Norwegian', isKnown: false },
     { word: 'Hva heter du?', meaning: 'What is your name?', isKnown: false },
     { word: 'Jeg heter ...', meaning: 'My name is ...', isKnown: false },
-    { word: 'Hvor kommer du fra?', meaning: 'Where are you from?', isKnown: false },
-    { word: 'Jeg kommer fra ...', meaning: 'I am from ...', isKnown: false },
+
   ]
   /*
     ['Unnskyld meg', 'Excuse me', 'Вибачте', 'عفوا'],
@@ -171,9 +170,21 @@ function App() {
     const knownWords = filtered.filter(word => word.isKnown);
     const unknownWords = filtered.filter(word => !word.isKnown);
 
+    console.log('filtered', filtered.length);
+
+    console.log('knownWords', knownWords.length);
+    console.log('unknownWords', unknownWords.length);
+    console.log('startwords', knownWords.length === filtered.length);
+
+
     let newWordlist = []
-    if (doCleanup && knownWords.length !== 0) {
-      newWordlist = [...unknownWords]
+
+    if (doCleanup) {
+      if (knownWords.length === filtered.length) {
+        newWordlist = startwords
+      } else {
+        newWordlist = [...unknownWords]
+      }
     } else {
       newWordlist = [...unknownWords, ...knownWords]
     }
@@ -184,6 +195,7 @@ function App() {
     const score = Math.round(known / (newWordlist.length) * 100);
     const result = { known, unknown, score, words: newWordlist.length };
     localStorage.setItem("flip", JSON.stringify({ words: newWordlist, result }))
+    resetScore()
     setEdit(false)
   }
 
@@ -209,7 +221,6 @@ function App() {
       {edit &&
         <div className='edit-wordlist'>
           <h2>{labels.titleEditing.at(language - 1)}</h2>
-
 
           {words.map((line, index) => {
             return (
