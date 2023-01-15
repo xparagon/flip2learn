@@ -14,7 +14,7 @@ interface EditWordlistProps {
 }
 function EditWordlist({ language, labels, words, setWords, closeEdit, handleMeaningChange, handleWordChange }: EditWordlistProps) {
 
-    const [message, setMessage] = useState('');
+    const [message, setMessage] = useState('Export does not work yet - on mobile');
     const newWords: Word[] = [] // copy of words
     const inputEl = useRef(null);
 
@@ -168,6 +168,7 @@ function EditWordlist({ language, labels, words, setWords, closeEdit, handleMean
 
             </div>
 
+
             <div className='select-label-language'>
                 <button className="language-button"
                     onClick={() => handleCleanup()}
@@ -191,7 +192,9 @@ function EditWordlist({ language, labels, words, setWords, closeEdit, handleMean
             </div>
             <hr />
             <pre>{message}</pre>
-
+            <div>
+                <a href="https://drive.google.com/drive/folders/1wmoP__LmyQBw0m8bkfWY1MPlxXVDUaZ5?usp=sharing" >Download Flips</a>
+            </div>
         </div >
     );
 }

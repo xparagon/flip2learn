@@ -3,6 +3,7 @@
 ## Version 0.3 - 15.01.2023
 
 Export and import.<br />
+NOTE: Export on Mobile don't work
 > The format is: .txt
 <pre>
     Some words as a header

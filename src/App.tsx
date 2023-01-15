@@ -172,7 +172,7 @@ function App() {
       }
 
       {!edit &&
-        <div>
+        <div className='flip-app'>
           <img src="/logo.png" className="logo" alt="Språkverksted logo" onClick={() => openEdit()} />
 
           <CountUp
