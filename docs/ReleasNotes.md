@@ -1,5 +1,38 @@
 # Release notes
 
+## Version 0.3 - 15.01.2023
+
+Export and import.<br />
+> The format is: .txt
+<pre>
+    Some words as a header
+    then 2 empty line to start the wordlist
+    First the word in norwegian
+    Then the translation
+    then one empty line
+    Then next word, etc.
+
+    When to empty lines occour
+    this indicates the start of a footer
+</pre>
+This is a simple template:
+<pre>
+    Here is my list:
+
+
+    utrolig
+    incredible
+
+    umulig
+    impossible
+
+
+    Send me an email of you want more
+    Regard
+    Fred
+</pre>
+<br />
+
 ## Version 0.2 - 13.01.2023
 
 Refactored code: made components.<br />

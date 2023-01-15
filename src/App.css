@@ -133,3 +133,7 @@ input[type="text"] {
   border: none;
   border-bottom: 1px solid gray;
 }
+
+.hidden-file-input {
+  display: none;
+}

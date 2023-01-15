@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 import './App.css'
 import CountUp from './component/CountUp'
+import EditWordlist from './component/EditWordlist'
 import FlipWord from './component/FlipWord'
 import HowToUse from './component/HowToUse'
 import ReportResults from './component/ReportResults'
@@ -26,7 +27,7 @@ function App() {
     doKnow: ['I know this', 'я знаю, що це', 'انا اعرف هذا', '✔'],
     doNotKnow: ['Don\'t know', 'не знаю', 'لا أعرف', '✕'],
     doAgain: ['Again', 'Знову', 'تكرارا', '♻'],
-    words: ['words', 'слова', 'كلمات', '👄'],
+    words: ['words', 'слова', 'كلمات', ''],
     howToCheck: ['Click the black box to see the word.',
       'Клацніть чорне поле, щоб побачити слово.',
       'انقر فوق المربع الأسود لرؤية الكلمة.', ''],
@@ -34,8 +35,14 @@ function App() {
       'Натисніть зелений, якщо ви знаєте це слово, червоний, якщо ні.',
       'انقر فوق الأخضر إذا كنت تعرف هذه الكلمة ، وإذا لم تكن تعرفها باللون الأحمر.', ''],
     titleEditing: ['Edit the wordlist', 'Відредагуйте список слів', 'قم بتحرير قائمة الكلمات', '👄👄 → 👄👄'],
-    doneEditing: ['Done', 'Готово', 'فعله', '✅ ❌'],
-    doneEditingAndCleanup: ['Remove ✔', 'Видалити ✔', 'قم بإزالة ✔', '✂ ✅'],
+    doneEditing: ['Done', 'Готово', 'فعله', '📌'],
+    doCleanup: ['Remove ✔', 'Видалити ✔', 'قم بإزالة ✔', '✂ ✅'],
+    doAdd: ['Add 5', 'Додайте 5', 'أضف 5', '+ 5'],
+    doExport: ['Export', 'Експорт', 'يصدّر', '↡'],
+    doImport: ['Import', 'Імпорт', 'يستورد', '↟'],
+    msgSaved: ['Words saved to file', 'Слова збережено у файл', 'الكلمات المحفوظة في الملف', '↡'],
+    msgLoaded: ['Words loaded from file', 'Слова, завантажені з файлу', 'الكلمات التي تم تحميلها من ملف', '↟'],
+    msgNoneLoaded: ['No words found in this file', 'У цьому файлі не знайдено слів', 'لا توجد كلمات وجدت في هذا الملف', '⛔'],
   }
 
 
@@ -45,57 +52,6 @@ function App() {
     { word: 'Jeg heter ...', meaning: 'My name is ...', isKnown: false },
 
   ]
-  /*
-    ['Unnskyld meg', 'Excuse me', 'Вибачте', 'عفوا'],
-    ['Hva', 'what', 'що', 'ماذا او ما'],
-    ['Hvor', 'where', 'де', 'أين'],
-    ['Hvorfor', 'why', 'чому', 'لماذا'],
-    ['Hvordan', 'how', 'як', 'كيف'],
-    ['Når', 'when', 'коли', 'متى'],
-    ['Mitt navn er', 'my name is', 'мене звати', 'اسمي هو'],
-    ['Hva heter du', 'what is your name', 'як тебе звати', 'ما اسمك'],
-    ['Alder', 'age', 'вік', 'عمر'],
-    ['Gammel', 'old', 'старий', 'عمر او قديم'],
-    ['Jobb', 'job', 'робота', 'مهنة'],
-    ['Utdanning', 'education', 'освіти', 'التعليم'],
-    ['Familie', 'family', 'родина', 'أسرة'],
-    ['Barn', 'children', 'дітей', 'الأطفال'],
-    ['Sønn', 'son', 'син', 'ابن'],
-    ['Datter', 'daughter', 'дочка', 'بنت'],
-    ['Hus', 'House', 'Будинок', 'منزل'],
-    ['Bok', 'Book', 'книга', 'كتاب'],
-    ['Bil', 'Car', 'автомобіль', 'سيارات'],
-    ['Katt', 'Cat', 'кішка', 'قط'],
-    ['Hund', 'Dog', 'Пес', 'لكن'],
-    ['Glede', 'Joy', 'Радість', 'مرح'],
-    ['Sol', 'Sun', 'сонце', 'شمس'],
-    ['Søster', 'Sister', 'сестра', 'أخت'],
-    ['Bror', 'Brother', 'Брат', 'أخ'],
-    ['Venn', 'Friend', 'Друг', 'صديق'],
-    ['Fjell', 'Mountain', 'Гора', 'جبل'],
-    ['Hav', 'Sea', 'море', 'بحر'],
-    ['skog', 'Forest', 'Ліс', 'غابة'],
-    ['Skjorte', 'Shirt', 'Сорочка', 'قميص'],
-    ['Genser', 'Sweater', 'светр', 'سترة'],
-    ['Kjole', 'Dress', 'Плаття', 'بدلة'],
-    ['Jakke', 'Jacket', 'Піджак', 'السترة'],
-    ['Sko', 'Shoes', 'Взуття', 'أحذية'],
-    ['Støvler', 'Boots', 'Чоботи', 'أحذية'],
-    ['Skjerf', 'Scarf', 'Шарф', 'الأوشحة'],
-    ['Belte', 'Belt', 'Пояс', 'حزام'],
-    ['Sokker', 'Socks', 'Шкарпетки', 'جوارب'],
-    ['Regnjakke', 'Raincoat', 'Дощовик', 'معطف واق من المطر'],
-    ['Koffert', 'Suitcase', 'Валіза', 'حقيبة سفر'],
-    ['Øredobber', 'Earrings', 'Сережки', 'أقراط'],
-    ['Stol', 'Chair', 'Стілець', 'كرسي'],
-    ['Seng', 'Bed', 'Ліжко', 'يصلي'],
-    ['Bord', 'Table', 'Таблиця', 'الطاولة'],
-    ['Skrivebord', 'desk', 'Письмовий стіл', 'طاولة مكتب'],
-    ['Hyller', 'Shelves', 'Полиці', 'أرفف'],
-    ['Benk', 'Bench', 'Лава', 'مقعد'],
-    ['Bokhylle', 'Bookshelf', 'Книжкова полиця', 'رف الكتب'],
-  ]
-*/
 
   function isAtTheStart() {
     return count === 0
@@ -159,42 +115,27 @@ function App() {
   }, [])
 
   function openEdit() {
-    const moreWords = [...words, { word: '', meaning: '', isKnown: false }, { word: '', meaning: '', isKnown: false }, { word: '', meaning: '', isKnown: false }, { word: '', meaning: '', isKnown: false }, { word: '', meaning: '', isKnown: false }]
-    setWords(moreWords)
     setEdit(true)
   }
 
-  function closeEdit(doCleanup: boolean) {
-
+  function closeEdit() {
     const filtered = words.filter(word => !(word.word === '' || word.meaning === ''))
-    const knownWords = filtered.filter(word => word.isKnown);
-    const unknownWords = filtered.filter(word => !word.isKnown);
+    let newWords: Word[] = []
 
-    console.log('filtered', filtered.length);
-
-    console.log('knownWords', knownWords.length);
-    console.log('unknownWords', unknownWords.length);
-    console.log('startwords', knownWords.length === filtered.length);
-
-
-    let newWordlist = []
-
-    if (doCleanup) {
-      if (knownWords.length === filtered.length) {
-        newWordlist = startwords
-      } else {
-        newWordlist = [...unknownWords]
-      }
+    if (filtered.length === 0) {
+      setWords(startwords)
+      newWords = startwords
     } else {
-      newWordlist = [...unknownWords, ...knownWords]
+      newWords = filtered
     }
 
-    setWords(newWordlist)
-    const known = newWordlist.filter(word => word.isKnown).length;
-    const unknown = newWordlist.filter(word => !word.isKnown).length;
-    const score = Math.round(known / (newWordlist.length) * 100);
-    const result = { known, unknown, score, words: newWordlist.length };
-    localStorage.setItem("flip", JSON.stringify({ words: newWordlist, result }))
+    setWords(newWords) // set new words
+
+    const known = newWords.filter(word => word.isKnown).length;
+    const unknown = newWords.filter(word => !word.isKnown).length;
+    const score = Math.round(known / (newWords.length) * 100);
+    const result = { known, unknown, score, words: newWords.length };
+    localStorage.setItem("flip", JSON.stringify({ words: newWords, result }))
     resetScore()
     setEdit(false)
   }
@@ -219,45 +160,15 @@ function App() {
     <div className="App">
 
       {edit &&
-        <div className='edit-wordlist'>
-          <h2>{labels.titleEditing.at(language - 1)}</h2>
-
-          {words.map((line, index) => {
-            return (
-              <div key={index} className='edit-definition'>
-
-                <div className='edit-word'>
-                  <div className='edit-nr'>
-                    {index + 1}.
-                  </div>
-                  <input type="text"
-                    value={line.word}
-                    onChange={(e) => handleWordChange(e, index)}
-                  />
-                </div>
-                <div className='edit-meaning'>
-                  <div className='edit-known'>
-                    {line.isKnown ? '✅' : '❌'}
-                  </div>
-                  <input type="text"
-                    value={line.meaning}
-                    onChange={(e) => handleMeaningChange(e, index)}
-                  />
-                </div>
-              </div>
-            )
-          })
-          }
-
-          <div className="button-row">
-            <button className='button'
-              onClick={() => closeEdit(false)}
-            >{labels.doneEditing.at(language - 1)}</button>
-            <button className='button'
-              onClick={() => closeEdit(true)}
-            >{labels.doneEditingAndCleanup.at(language - 1)}</button>
-          </div>
-        </div>
+        <EditWordlist
+          language={language}
+          labels={labels}
+          words={words}
+          setWords={setWords}
+          closeEdit={closeEdit}
+          handleWordChange={handleWordChange}
+          handleMeaningChange={handleMeaningChange}
+        />
       }
 
       {!edit &&
@@ -316,7 +227,7 @@ function App() {
           <details>
             <summary>This is just a prototype</summary>
             <div className='about-box'>
-              Version 0.2 - 13.01.2023<br />
+              Version 0.3 - 15.01.2023<br />
               Please suggest features to <a href="mailto:fredpallesen@gmail.com">Fred</a><br />
               or add an issue to the <a href="https://github.com/xparagon/flip2learn/issues">GitHub repo</a>.
             </div>

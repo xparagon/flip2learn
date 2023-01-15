@@ -8,7 +8,13 @@ export interface Labels {
     howToProceed: string[],
     titleEditing: string[],
     doneEditing: string[],
-    doneEditingAndCleanup: string[],
+    doCleanup: string[],
+    doAdd: string[],
+    doExport: string[],
+    doImport: string[],
+    msgSaved: string[],
+    msgLoaded: string[],
+    msgNoneLoaded: string[],
 }
 
 export interface Word {
