@@ -1,6 +1,8 @@
 # Flip
 
-This is a prototype of an app to help you learn Norwegian.
+This is an early version of an app to help you learn Norwegian.
+
+![](/docs/flip.png)
 
 
 Try it out at https://flip.fred.technology/
