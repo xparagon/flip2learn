@@ -1,6 +1,5 @@
 import React, { useRef, useState } from 'react';
 import { Labels, Word } from '../types';
-import YAML from 'yaml'
 
 
 interface EditWordlistProps {
