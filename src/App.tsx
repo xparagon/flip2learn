@@ -7,7 +7,7 @@ import HowToUse from './component/HowToUse'
 import ReportResults from './component/ReportResults'
 import SelectLabelLanguage from './component/SelectLabelLanguage'
 import StatusBar from './component/StatusBar'
-import { Labels, Word } from './types'
+import { Labels, Result, Word } from './types'
 
 function App() {
   const [edit, setEdit] = useState(false)
@@ -21,6 +21,8 @@ function App() {
   const [words, setWords] = useState<Word[]>([
     { word: '?', meaning: '!', isKnown: false },
   ])
+
+  const [progress, setProgress] = useState<Result[]>([])
 
   const languages = ['English', 'українська', 'عربي', '❖']
   const labels: Labels = {
@@ -55,6 +57,17 @@ function App() {
 
   ]
 
+  function maxWordsInProgress() {
+    const wordCountList = progress.map(p => p.words)
+    return Math.max(...wordCountList)
+  }
+
+  function progressBarWidth(points: number) {
+    const max = maxWordsInProgress()
+
+    return Math.round(points / max * 100) + '%'
+  }
+
   function isAtTheStart() {
     return count === 0
   }
@@ -66,6 +79,7 @@ function App() {
   function nextWord() {
     setCheck(false)
     if (count === words.length - 1) {
+      // when done, calculate the result
       calculateResult()
       setDone(true)
     } else {
@@ -101,8 +115,12 @@ function App() {
     const known = words.filter(word => word.isKnown).length;
     const unknown = words.filter(word => !word.isKnown).length;
     const score = Math.round(known / (words.length) * 100);
-    const result = { known, unknown, score, words: words.length };
-    localStorage.setItem("flip", JSON.stringify({ words, result }))
+    const result: Result = { known, unknown, score, words: words.length };
+    // TODO: update progress
+    console.log('result:', result);
+    const newProgress = [result, ...progress.slice(0, 99)]
+    setProgress(newProgress)
+    localStorage.setItem("flip", JSON.stringify({ words, result, progress: newProgress }))
   }
 
   useEffect(() => {
@@ -110,8 +128,16 @@ function App() {
     if (!saved) {
       setWords(startwords)
     } else {
+      // when starting up - load words from localstorage
       const parsed = JSON.parse(saved)
+      console.log('flip:', parsed);
       setWords(parsed.words)
+      // TODO - load progress
+      if (!parsed.progress) {
+        console.log('no progress');
+      } else {
+        setProgress(parsed.progress)
+      }
     }
 
   }, [])
@@ -136,8 +162,10 @@ function App() {
     const known = newWords.filter(word => word.isKnown).length;
     const unknown = newWords.filter(word => !word.isKnown).length;
     const score = Math.round(known / (newWords.length) * 100);
-    const result = { known, unknown, score, words: newWords.length };
-    localStorage.setItem("flip", JSON.stringify({ words: newWords, result }))
+    const result: Result = { known, unknown, score, words: newWords.length };
+    // TODO: update words only!
+    console.log('closeEdit - flip:', { words: newWords, result });
+    localStorage.setItem("flip", JSON.stringify({ words: newWords, result, progress }))
     resetScore()
     setEdit(false)
   }
@@ -225,6 +253,33 @@ function App() {
             language={language}
             setLanguage={setLanguage}
           />
+          <hr />
+          <div className='progress'>
+
+            <div className='progress-list'>
+              {progress.map((result, index) => (
+                <div className='progress-item' key={index}>
+                  <div className='progress-item-unknown-column'>
+                    <div className="isNo progress-item-bar"
+                      style={{ width: progressBarWidth(result.unknown) }}
+
+                    ></div>
+
+
+                  </div>
+                  <div className='progress-item-known-column'
+                  >
+                    <div className="isYes progress-item-bar"
+                      style={{ width: progressBarWidth(result.known) }}
+                    ></div>
+                  </div>
+
+                </div>
+              ))}
+            </div>
+          </div>
+
+
           <hr />
           <details>
             <summary>This is just a prototype</summary>

@@ -1,5 +1,12 @@
 # Release notes
 
+## Version 0.4 - 16.01.2023
+
+Export now works on a mobile.<br />
+Added a process bar (up to 100 lines).<br />
+Added 4 flips (en, uk, ar) with some words to import.<br />
+<br />
+
 ## Version 0.3 - 15.01.2023
 
 Export and import.<br />

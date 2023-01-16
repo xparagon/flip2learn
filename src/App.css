@@ -144,3 +144,44 @@ input[type="text"] {
 .download-links {
   margin: 10px;
 }
+
+.progress-list {
+  margin: 10px;
+}
+
+.progress-item {
+  display: flex;
+  padding-bottom: 1px;
+}
+.progress-item-unknown-column {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  width: 50%;
+}
+.progress-item-known-column {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  width: 50%;
+}
+
+.progress-item-bar {
+  height: 5px;
+}
+
+/*
+
+style={{ width: `${(result.known / maxWordsInProgress()) / (result.words / maxWordsInProgress()) * 100}%` }}
+ <div className='isNo'
+                      style={{ width: `${(result.unknown / maxWordsInProgress()) / (result.words / maxWordsInProgress()) * 100}%` }}
+                    >
+                      {result.unknown}
+                    </div>
+
+                  
+                    <div className='isYes'>
+
+                      {result.known}
+                    </div>
+*/

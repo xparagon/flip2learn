@@ -25,3 +25,11 @@ export interface Word {
     isKnown: boolean,
 }
 
+export interface Result {
+    known: number,
+    unknown: number,
+    score: number,
+    words: number,
+}
+
+
