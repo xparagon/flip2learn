@@ -27,10 +27,12 @@ function FlipWord({ check, count,
             <div className="button-row">
                 <button className='button isNo'
                     onMouseDown={handleCheck}
+                    onTouchStart={handleCheck}
                     onMouseUp={handleNo}
                 >{labels.doNotKnow.at(language - 1)}</button>
                 <button className='button isYes'
                     onMouseDown={handleCheck}
+                    onTouchStart={handleCheck}
                     onMouseUp={handleYes}
                 >{labels.doKnow.at(language - 1)}</button>
             </div>
