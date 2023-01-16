@@ -27,6 +27,7 @@ function App() {
     doKnow: ['I know this', 'я знаю, що це', 'انا اعرف هذا', '✔'],
     doNotKnow: ['Don\'t know', 'не знаю', 'لا أعرف', '✕'],
     doAgain: ['Again', 'Знову', 'تكرارا', '♻'],
+    doShuffle: ['Shuffle', 'Перемішати', 'التبديل', '🔀'],
     words: ['words', 'слова', 'كلمات', ''],
     howToCheck: ['Click the black box to see the word.',
       'Клацніть чорне поле, щоб побачити слово.',
@@ -43,6 +44,7 @@ function App() {
     msgSaved: ['Words saved to file', 'Слова збережено у файл', 'الكلمات المحفوظة في الملف', '↡'],
     msgLoaded: ['Words loaded from file', 'Слова, завантажені з файлу', 'الكلمات التي تم تحميلها من ملف', '↟'],
     msgNoneLoaded: ['No words found in this file', 'У цьому файлі не знайдено слів', 'لا توجد كلمات وجدت في هذا الملف', '⛔'],
+    msgShuffled: ['Words shuffled', 'Слова перемішані', 'الكلمات المخلوطة', '🔀'],
   }
 
 
@@ -227,11 +229,16 @@ function App() {
           <details>
             <summary>This is just a prototype</summary>
             <div className='about-box'>
-              Version 0.3 - 15.01.2023<br />
+              Version 0.4 - 16.01.2023<br />
               Please suggest features to <a href="mailto:fredpallesen@gmail.com">Fred</a><br />
               or add an issue to the <a href="https://github.com/xparagon/flip2learn/issues">GitHub repo</a>.
             </div>
           </details>
+          <div className='download-links'>
+            <p>
+              <a href="https://drive.google.com/drive/folders/1wmoP__LmyQBw0m8bkfWY1MPlxXVDUaZ5?usp=sharing" >Download Flips</a>
+            </p>
+          </div>
         </div>
       }
     </div >

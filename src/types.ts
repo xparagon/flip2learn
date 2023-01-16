@@ -3,6 +3,7 @@ export interface Labels {
     doKnow: string[],
     doNotKnow: string[],
     doAgain: string[],
+    doShuffle: string[],
     words: string[],
     howToCheck: string[],
     howToProceed: string[],
@@ -15,6 +16,7 @@ export interface Labels {
     msgSaved: string[],
     msgLoaded: string[],
     msgNoneLoaded: string[],
+    msgShuffled: string[],
 }
 
 export interface Word {

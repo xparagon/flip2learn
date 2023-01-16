@@ -140,3 +140,7 @@ input[type="text"] {
 .hidden-file-input {
   display: none;
 }
+
+.download-links {
+  margin: 10px;
+}

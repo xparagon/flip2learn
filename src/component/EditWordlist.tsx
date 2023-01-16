@@ -14,7 +14,7 @@ interface EditWordlistProps {
 }
 function EditWordlist({ language, labels, words, setWords, closeEdit, handleMeaningChange, handleWordChange }: EditWordlistProps) {
 
-    const [message, setMessage] = useState('Export does not work yet - on mobile');
+    const [message, setMessage] = useState('');
     const newWords: Word[] = [] // copy of words
     const inputEl = useRef(null);
 
@@ -100,35 +100,43 @@ function EditWordlist({ language, labels, words, setWords, closeEdit, handleMean
     }
 
     async function saveFile() {
-
-        const newHandle = await window.showSaveFilePicker({
-            suggestedName: 'Flip  - ' + ((new Date()).toDateString()) + '.txt',
-        });
-
-        const writableStream = await newHandle.createWritable();
-
-        // heading ending with two newlines
-        await writableStream.write('Flip  \n'
-            + ((new Date()).toDateString())
-            + '\n' + words.length + ' words\n\n\n');
-
-
-        let exportedWords = ''
+        const fileHeader = 'Flip  \n' + ((new Date()).toDateString()) + '\n' + words.length + ' words\n\n\n';
+        let exportedWords = '';
         words.forEach(line => {
             if (!(line.word === '' || line.meaning === '')) {
-                exportedWords += line.word + '\n' + line.meaning + '\n\n'
+                exportedWords += line.word + '\n' + line.meaning + '\n\n';
             }
-        })
-        await writableStream.write(exportedWords);
-
-        // footer - starting with two newlines
-        await writableStream.write('\n\nhttps://flip.fred.technology/\n');
-        await writableStream.write('\n\nhttps://sprakverksted.no/\n');
-
-        await writableStream.close();
-        setMessage(labels.msgSaved.at(language - 1) as string)
+        });
+        const fileContent = fileHeader + exportedWords + '\n\nhttps://flip.fred.technology/\n' + '\n\nhttps://sprakverksted.no/\n';
+        const blob = new Blob([fileContent], { type: 'text/plain' });
+        const url = window.URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        a.style.display = 'none';
+        a.href = url;
+        const now = new Date();
+        const dateTime = now.getFullYear() + '-' + (now.getMonth() + 1) + '-' + now.getDate(); // + ' ' + now.getHours() + ':' + now.getMinutes()
+        a.download = 'Flip - ' + dateTime + '.txt';
+        document.body.appendChild(a);
+        a.click();
+        window.URL.revokeObjectURL(url);
+        a.remove();
+        setMessage(labels.msgSaved.at(language - 1) as string);
     }
 
+    function shuffleArray(jsonArray: Word[]) {
+        for (let i = jsonArray.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [jsonArray[i], jsonArray[j]] = [jsonArray[j], jsonArray[i]];
+        }
+        return jsonArray;
+    }
+
+    function handleShuffle() {
+        const newWords = [...words]
+        const shuffled = shuffleArray(newWords);
+        setWords(shuffled);
+        setMessage(labels.msgShuffled.at(language - 1) as string);
+    }
 
     return (
         <div className='edit-wordlist'>
@@ -165,6 +173,9 @@ function EditWordlist({ language, labels, words, setWords, closeEdit, handleMean
                 <button className='button'
                     onClick={() => closeEdit()}
                 >{labels.doneEditing.at(language - 1)}</button>
+                <button className='button'
+                    onClick={() => handleShuffle()}
+                >{labels.doShuffle.at(language - 1)}</button>
 
             </div>
 
@@ -192,8 +203,10 @@ function EditWordlist({ language, labels, words, setWords, closeEdit, handleMean
             </div>
             <hr />
             <pre>{message}</pre>
-            <div>
-                <a href="https://drive.google.com/drive/folders/1wmoP__LmyQBw0m8bkfWY1MPlxXVDUaZ5?usp=sharing" >Download Flips</a>
+            <div className='download-links'>
+                <p>
+                    <a href="https://drive.google.com/drive/folders/1wmoP__LmyQBw0m8bkfWY1MPlxXVDUaZ5?usp=sharing" >Download Flips</a>
+                </p>
             </div>
         </div >
     );
