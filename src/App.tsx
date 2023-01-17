@@ -281,11 +281,13 @@ function App() {
           </div>
 
           <hr />
+          <br />
           <div className='download-links'>
             <p>
               <a href="https://fred.technology/flips" >{labels.moreWords.at(language - 1)}</a>
             </p>
           </div>
+          <br />
           <details>
             <summary>Version 0.4 - 16.01.2023</summary>
             <div className='about-box'>

@@ -1,5 +1,12 @@
 # Release notes
 
+## Version 0.5 - 17.01.2023
+
+Link to better help page.<br />
+Nuke all list!<br />
+Import will now add - not replace<br />
+A text field to paste a flip file into.<br />
+<br />
 ## Version 0.4 - 16.01.2023
 
 Export now works on a mobile.<br />

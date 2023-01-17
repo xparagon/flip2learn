@@ -10,10 +10,10 @@ interface SelectLabelLanguageProps {
 function SelectLabelLanguage({ languages, language, setLanguage }: SelectLabelLanguageProps) {
 
     return (
-        <div className='select-label-language'>
+        <div className='button-row'>
             {languages.map((language, index) => {
                 return (
-                    <button key={index} className="language-button"
+                    <button key={index} className="small-button"
                         onClick={() => setLanguage(index + 1)}
 
                     >{languages[index]}</button>
