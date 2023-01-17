@@ -204,7 +204,7 @@ function EditWordlist({ language, labels, words, setWords, closeEdit, handleMean
             <pre>{message}</pre>
             <div className='download-links'>
                 <p>
-                    <a href="https://drive.google.com/drive/folders/1wmoP__LmyQBw0m8bkfWY1MPlxXVDUaZ5?usp=sharing" >Download Flips</a>
+                    <a href="https://fred.technology/flips" >{labels.moreWords.at(language - 1)}</a>
                 </p>
             </div>
         </div >

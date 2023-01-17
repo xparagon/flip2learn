@@ -5,6 +5,7 @@ export interface Labels {
     doAgain: string[],
     doShuffle: string[],
     words: string[],
+    moreWords: string[],
     howToCheck: string[],
     howToProceed: string[],
     titleEditing: string[],

@@ -31,6 +31,7 @@ function App() {
     doAgain: ['Again', 'Знову', 'تكرارا', '♻'],
     doShuffle: ['Shuffle', 'змішувати', 'مزج', '🔀'],
     words: ['words', 'слова', 'كلمات', ''],
+    moreWords: ['More words', 'більше слів', 'المزيد من الكلمات', 'Download'],
     howToCheck: ['Click the black box to see the word.',
       'Клацніть чорне поле, щоб побачити слово.',
       'انقر فوق المربع الأسود لرؤية الكلمة.', ''],
@@ -279,21 +280,27 @@ function App() {
             </div>
           </div>
 
-
           <hr />
-          <details>
-            <summary>This is just a prototype</summary>
-            <div className='about-box'>
-              Version 0.4 - 16.01.2023<br />
-              Please suggest features to <a href="mailto:fredpallesen@gmail.com">Fred</a><br />
-              or add an issue to the <a href="https://github.com/xparagon/flip2learn/issues">GitHub repo</a>.
-            </div>
-          </details>
           <div className='download-links'>
             <p>
-              <a href="https://drive.google.com/drive/folders/1wmoP__LmyQBw0m8bkfWY1MPlxXVDUaZ5?usp=sharing" >Download Flips</a>
+              <a href="https://fred.technology/flips" >{labels.moreWords.at(language - 1)}</a>
             </p>
           </div>
+          <details>
+            <summary>Version 0.4 - 16.01.2023</summary>
+            <div className='about-box'>
+              <b>
+                NOTE: Nothing is saved in the cloud!<br />
+              </b>
+              Everything is on YOUR device.<br /><br />
+              Please send feedback to <a href="mailto:fredpallesen@gmail.com">Fred</a><br />
+              or add an issue to <a href="https://github.com/xparagon/flip2learn/issues">GitHub</a>.<br /><br />
+              If you create a good word-list<br />
+              export the list and mail it to a friend.<br />
+              so that they can import it and use it.
+            </div>
+          </details>
+
         </div>
       }
     </div >
