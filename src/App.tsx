@@ -289,7 +289,7 @@ function App() {
           </div>
           <br />
           <details>
-            <summary>Version 0.4 - 16.01.2023</summary>
+            <summary>Version 0.5 - 16.01.2023</summary>
             <div className='about-box'>
               <b>
                 NOTE: Nothing is saved in the cloud!<br />
