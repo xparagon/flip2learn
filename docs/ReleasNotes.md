@@ -1,5 +1,12 @@
 # Release notes
 
+## Version 0.6 - 18.01.2023
+
+More compact edit.<br />
+Changed "More words" to "Help".<br />
+Download now named 'Flip YYYY-MM-DD HH.MM words.txt'.<br />
+<br />
+
 ## Version 0.5 - 17.01.2023
 
 Link to better help page.<br />

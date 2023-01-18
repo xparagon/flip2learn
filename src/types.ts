@@ -18,6 +18,7 @@ export interface Labels {
     msgLoaded: string[],
     msgNoneLoaded: string[],
     msgShuffled: string[],
+    help: string[],
 }
 
 export interface Word {

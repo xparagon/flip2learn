@@ -146,8 +146,12 @@ function EditWordlist({
         a.href = url;
         const now = new Date();
         const dateTime =
-            now.getFullYear() + "-" + (now.getMonth() + 1) + "-" + now.getDate(); // + ' ' + now.getHours() + ':' + now.getMinutes()
-        a.download = "Flip - " + dateTime + ".txt";
+            now.getFullYear() + "-"
+            + ((now.getMonth() + 1) < 10 ? '0' : '') + (now.getMonth() + 1) + "-"
+            + now.getDate() + ' '
+            + now.getHours() + '.'
+            + (now.getMinutes() < 10 ? '0' : '') + now.getMinutes();
+        a.download = "Flip " + dateTime + " words.txt";
         document.body.appendChild(a);
         a.click();
         window.URL.revokeObjectURL(url);
@@ -172,7 +176,7 @@ function EditWordlist({
 
 
     function handleOpenText() {
-        setText('Flip\n\n\nNorsk\nTranslation\n\nNeste\nNext\n\n\nEnd');
+        setText('');
         setShowText(true);
     }
 
@@ -186,9 +190,9 @@ function EditWordlist({
 
     return (
         <div className="edit-wordlist">
-            <h2>{labels.titleEditing.at(language - 1)}</h2>
 
             <div className="button-row">
+                <h2>{labels.titleEditing.at(language - 1)} {words.length} {labels.words.at(language - 1)}</h2>
                 <button className="small-button" onClick={() => closeEdit()}>
                     {labels.doneEditing.at(language - 1)}
                 </button>
@@ -212,16 +216,15 @@ function EditWordlist({
                 return (
                     <div key={index} className="edit-definition">
                         <div className="edit-word">
-                            <div className="edit-nr">{index + 1}.</div>
-                            <input
+                            <input className="edit-word-input"
                                 type="text"
                                 value={line.word}
                                 onChange={(e) => handleWordChange(e, index)}
                             />
+                            <div className="edit-known">&nbsp;{line.isKnown ? "✅" : ""}</div>
                         </div>
                         <div className="edit-meaning">
-                            <div className="edit-known">{line.isKnown ? "✅" : "❌"}</div>
-                            <input
+                            <input className="edit-meaning-input"
                                 type="text"
                                 value={line.meaning}
                                 onChange={(e) => handleMeaningChange(e, index)}
@@ -242,13 +245,25 @@ function EditWordlist({
                 <button className="small-button" onClick={() => saveFile()}>
                     {labels.doExport.at(language - 1)}
                 </button>
-                <div className="download-links">
-                    <p>
-                        <a href="https://fred.technology/flips">
-                            {labels.moreWords.at(language - 1)}
-                        </a>
-                    </p>
-                </div>
+                {!showText && (
+
+                    <button className="small-button" onClick={() => handleOpenText()}>
+                        ☷ flip ☷
+                    </button>
+
+                )}
+                {showText &&
+                    <div>
+                        <button className="small-button" onClick={() => handleCloseAndUseTest()}>
+                            ✚
+                        </button>
+                        <button className="small-button" onClick={() => setShowText(false)}>
+                            ✕
+                        </button>
+                    </div>
+                }
+
+
                 <button className="small-button" onClick={() => loadFile()}>
                     {labels.doImport.at(language - 1)}
                 </button>
@@ -264,31 +279,26 @@ function EditWordlist({
             <hr />
             <pre>{message}</pre>
 
-            {!showText && (
-                <button className="small-button" onClick={() => handleOpenText()}>
-                    ☷ flip ☷
-                </button>
-            )}
+
 
             {showText && (
                 <div className="text-area-wrapper">
+
                     <textarea
                         className="text-area"
                         value={text}
                         onChange={(e) => setText(e.target.value)}
                     />
-
-                    <div className="button-row">
-                        <button className="small-button" onClick={() => handleCloseAndUseTest()}>
-                            ✚
-                        </button>
-                        <button className="small-button" onClick={() => setShowText(false)}>
-                            ✕
-                        </button>
-                    </div>
                 </div>
             )}
             <br />
+            <div className="download-links">
+                <p>
+                    <a href="https://fred.technology/flips">
+                        {labels.moreWords.at(language - 1)}
+                    </a>
+                </p>
+            </div>
             <br />
             <br />
             <br />
