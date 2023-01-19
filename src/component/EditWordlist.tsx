@@ -196,34 +196,6 @@ function EditWordlist({
     }
 
 
-    function handleReadURL(typeOfContent: string, lang: number): void {
-        console.log("handleReadURL");
-        let languageCode = 'en';
-        switch (lang) {
-            case 1:
-                languageCode = 'en';
-                break;
-            case 2:
-                languageCode = 'uk';
-                break;
-            case 3:
-                languageCode = 'ar';
-                break;
-        }
-        const URL = location.href + "flips/" + typeOfContent + "-" + languageCode + ".txt";
-
-        // console.log(URL);
-
-        fetch(URL)
-            .then(response => {
-                return response.text()
-            })
-            .then(content => {
-                setText(content);
-            })
-            .catch(error => console.error(error));
-    }
-
     return (
         <div className="edit-wordlist">
 
@@ -331,20 +303,7 @@ function EditWordlist({
                         />
                     </div>
 
-                    <p>{labels.msgSample.at(language - 1)}</p>
-                    <button className="small-button" onClick={() => handleReadURL('start', language)}>
-                        1
-                    </button>
-                    <button className="small-button" onClick={() => handleReadURL('tall', language)}>
-                        2
-                    </button>
-                    <button className="small-button" onClick={() => handleReadURL('klaer', language)}>
-                        3
-                    </button>
-                    <button className="small-button" onClick={() => handleReadURL('arbeid', language)}>
-                        4
-                    </button>
-                    <br />
+
                 </>
 
             )}
