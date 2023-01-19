@@ -169,7 +169,6 @@ function App() {
     const score = Math.round(known / (newWords.length) * 100);
     const result: Result = { known, unknown, score, words: newWords.length };
     // TODO: update words only!
-    console.log('closeEdit - flip:', { words: newWords, result });
     localStorage.setItem("flip", JSON.stringify({ words: newWords, result, progress }))
     resetScore()
     setEdit(false)
@@ -293,7 +292,7 @@ function App() {
           </div>
           <br />
           <details>
-            <summary>Version 0.6 - 18.01.2023</summary>
+            <summary>Version 0.7 - 19.01.2023</summary>
             <div className='about-box'>
               <b>
                 NOTE: Nothing is saved in the cloud!<br />
@@ -306,6 +305,7 @@ function App() {
               so that they can import it and use it.
             </div>
           </details>
+          <br />
 
         </div>
       }

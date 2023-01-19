@@ -210,7 +210,11 @@ function EditWordlist({
                 languageCode = 'ar';
                 break;
         }
-        fetch("/flips/" + typeOfContent + " (" + languageCode + ").txt")
+        const URL = location.href + "flips/" + typeOfContent + "-" + languageCode + ".txt";
+
+        // console.log(URL);
+
+        fetch(URL)
             .then(response => {
                 return response.text()
             })
@@ -282,7 +286,7 @@ function EditWordlist({
                 </button>
                 {!showText && (
 
-                    <button className="small-button" onClick={() => handleOpenText()}>
+                    <button className="small-button focus-button" onClick={() => handleOpenText()}>
                         ☷ flip ☷
                     </button>
 
