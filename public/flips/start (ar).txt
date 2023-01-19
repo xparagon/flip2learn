@@ -1,0 +1,62 @@
+Flip  
+Første ordliste
+
+
+Hvor kommer du fra?
+من أين أنت؟
+
+Hvor lenge?
+حتى متى؟
+
+Hvordan står det til?
+كيف حالكم؟
+
+Jeg er fra ____.
+أنا من ____.
+
+Jeg forstår ikke.
+لا أفهم.
+
+Jeg forstår.
+أفهم.
+
+Jeg heter ___.
+اسمي هو ___.
+
+Jeg hørte ikke.
+لم اسمع.
+
+Jeg kommer fra _____.
+لقد جئت من _____.
+
+Kan du gjenta?
+هل يمكنك التكرار؟
+
+Mitt navn er ___.
+اسمي هو ___.
+
+Når da?
+متى؟
+
+På gjensyn.
+مع السلامة.
+
+Takk bare bra.
+شكرا بخير.
+
+Takk for meg.
+شكرًا لك.
+
+Vi ses.
+أراك لاحقًا.
+
+Vil du ha en kopp kaffe?
+هل تريد كوب من القهوة؟
+
+
+
+
+
+
+https://flip.fred.technology/
+https://sprakverksted.no/

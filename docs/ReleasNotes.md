@@ -1,5 +1,12 @@
 # Release notes
 
+## Version 0.7 - 19.01.2023
+
+Swap word.<br />
+Using more icons for buttons.<br />
+Some sample flips for quick start.<br />
+<br />
+
 ## Version 0.6 - 18.01.2023
 
 More compact edit.<br />

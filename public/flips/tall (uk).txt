@@ -1,0 +1,188 @@
+Flip
+om tall
+
+
+antall
+Кількість
+
+atten
+вісімнадцять
+
+beløp
+сума
+
+brøk  1/2
+частка 1/2
+
+dele
+частка
+
+desimaler
+десяткові знаки
+
+desimaltall
+десяткове число
+
+elleve
+одинадцять
+
+en / ett
+один / один
+
+en billiard
+один більярд
+
+en hundredel
+одна сота
+
+en milliard
+один мільярд
+
+en million
+мільйон
+
+en prosent
+один відсоток
+
+en tidel
+десята частина
+
+ett tusen
+одна тисяча
+
+fem
+п'ять
+
+femten
+п'ятнадцять
+
+femti
+п'ятдесят
+
+fire
+чотири
+
+fjerdedel 1/4
+чверть 1/4
+
+fjorten
+чотирнадцять
+
+førti
+сорок
+
+gange
+множення
+
+halv
+половина
+
+hel
+ціле
+
+heltall
+ціле число
+
+hundre
+сто
+
+komma
+кома
+
+kvart
+квартал
+
+minus
+мінус
+
+nevner
+згадки
+
+ni
+дев'ять
+
+nitten
+дев'ятнадцять
+
+nitti
+дев'яносто
+
+null
+нуль
+
+null komma en
+нуль кома один
+
+nummer
+номер
+
+plus
+плюс
+
+seks
+шість
+
+seksten
+шістнадцять
+
+seksti
+шістдесят
+
+siffer
+цифра
+
+sju / syv
+сім / сім
+
+sytten
+сімнадцять
+
+sytti
+сімдесят
+
+Tall
+Номер
+
+telle
+рахувати
+
+teller
+підрахунок
+
+ti
+десять
+
+tjuve
+злодій
+
+to
+два
+
+tolv
+дванадцять
+
+tre
+три
+
+tre fjerdedel 3/4
+три чверті 3/4
+
+tretten
+тринадцять
+
+tretti
+тридцять
+
+åtte
+вісім
+
+åtti
+вісімдесят
+
+
+
+
+
+https://flip.fred.technology/
+
+https://sprakverksted.no/

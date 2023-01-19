@@ -1,0 +1,188 @@
+Flip
+om tall
+
+
+antall
+كمية
+
+atten
+الثامنة عشر
+
+beløp
+مقدار
+
+brøk  1/2
+كسر 1/2
+
+dele
+شارك
+
+desimaler
+الكسور العشرية
+
+desimaltall
+عدد عشري
+
+elleve
+أحد عشر
+
+en / ett
+واحد واحد
+
+en billiard
+بلياردو واحد
+
+en hundredel
+المائة
+
+en milliard
+مليار واحد
+
+en million
+مليون
+
+en prosent
+واحد بالمئة
+
+en tidel
+عشر
+
+ett tusen
+ألف
+
+fem
+خمسة
+
+femten
+خمسة عشر
+
+femti
+خمسون
+
+fire
+أربعة
+
+fjerdedel 1/4
+ربع 1/4
+
+fjorten
+أربعة عشرة
+
+førti
+أربعين
+
+gange
+عمليه الضرب
+
+halv
+نصف
+
+hel
+كل
+
+heltall
+عدد صحيح
+
+hundre
+مائة
+
+komma
+فاصلة
+
+kvart
+ربع
+
+minus
+ناقص
+
+nevner
+يذكر
+
+ni
+تسع
+
+nitten
+تسعة عشر
+
+nitti
+تسعين
+
+null
+صفر
+
+null komma en
+صفر نقطة واحد
+
+nummer
+رقم
+
+plus
+زائد
+
+seks
+ستة
+
+seksten
+السادس عشر
+
+seksti
+ستين
+
+siffer
+رقم
+
+sju / syv
+سبعة / سبعة
+
+sytten
+سبعة عشر
+
+sytti
+سبعون
+
+Tall
+رقم
+
+telle
+عدد
+
+teller
+عد
+
+ti
+عشرة
+
+tjuve
+لص
+
+to
+اثنين
+
+tolv
+اثني عشر
+
+tre
+ثلاثة
+
+tre fjerdedel 3/4
+ثلاثة أرباع 3/4
+
+tretten
+ثلاثة عشر
+
+tretti
+ثلاثين
+
+åtte
+ثمانية
+
+åtti
+ثمانون
+
+
+
+
+
+https://flip.fred.technology/
+
+https://sprakverksted.no/

@@ -1,0 +1,187 @@
+Flip
+om tall
+
+
+antall
+Quantity
+
+atten
+eighteen
+
+beløp
+amount
+
+brøk  1/2
+fraction 1/2
+
+dele
+share
+
+desimaler
+decimals
+
+desimaltall
+decimal number
+
+elleve
+eleven
+
+en / ett
+one / one
+
+en billiard
+one billiard
+
+en hundredel
+one hundredth
+
+en milliard
+one billion
+
+en million
+a million
+
+en prosent
+one percent
+
+en tidel
+a tenth
+
+ett tusen
+one thousand
+
+fem
+five
+
+femten
+fifteen
+
+femti
+fifty
+
+fire
+four
+
+fjerdedel 1/4
+quarter 1/4
+
+fjorten
+fourteen
+
+førti
+forty
+
+gange
+multiplication
+
+halv
+half
+
+hel
+whole
+
+heltall
+integer
+
+hundre
+hundred
+
+komma
+comma
+
+kvart
+quarter
+
+minus
+minus
+
+nevner
+mentions
+
+ni
+nine
+
+nitten
+nineteen
+
+nitti
+ninety
+
+null
+zero
+
+null komma en
+zero point one
+
+nummer
+number
+
+plus
+plus
+
+seks
+six
+
+seksten
+sixteen
+
+seksti
+sixty
+
+siffer
+digit
+
+sju / syv
+seven / seven
+
+sytten
+seventeen
+
+sytti
+seventy
+
+Tall
+Number
+
+telle
+count
+
+teller
+counting
+
+ti
+ten
+
+tjuve
+thief
+
+to
+two
+
+tolv
+twelve
+
+tre
+three
+
+tre fjerdedel 3/4
+three quarters 3/4
+
+tretten
+thirteen
+
+tretti
+thirty
+
+åtte
+eight
+
+åtti
+eighty
+
+
+
+
+https://flip.fred.technology/
+
+https://sprakverksted.no/

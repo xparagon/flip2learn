@@ -4,6 +4,7 @@ export interface Labels {
     doNotKnow: string[],
     doAgain: string[],
     doShuffle: string[],
+    doSwap: string[],
     words: string[],
     moreWords: string[],
     howToCheck: string[],
@@ -18,6 +19,8 @@ export interface Labels {
     msgLoaded: string[],
     msgNoneLoaded: string[],
     msgShuffled: string[],
+    msgSwapped: string[],
+    msgSample: string[],
     help: string[],
 }
 

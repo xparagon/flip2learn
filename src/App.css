@@ -114,7 +114,11 @@
   border: 1px solid transparent;
   border-radius: 8px;
   color: gray;
+}
 
+.focus-button {
+  background-color: #ffab40;
+  color: white;
 }
 
 .edit-wordlist {

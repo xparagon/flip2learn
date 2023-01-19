@@ -159,12 +159,12 @@ function EditWordlist({
         setMessage(labels.msgSaved.at(language - 1) as string);
     }
 
-    function shuffleArray(jsonArray: Word[]) {
-        for (let i = jsonArray.length - 1; i > 0; i--) {
+    function shuffleArray(list: Word[]) {
+        for (let i = list.length - 1; i > 0; i--) {
             const j = Math.floor(Math.random() * (i + 1));
-            [jsonArray[i], jsonArray[j]] = [jsonArray[j], jsonArray[i]];
+            [list[i], list[j]] = [list[j], list[i]];
         }
-        return jsonArray;
+        return list;
     }
 
     function handleShuffle() {
@@ -174,6 +174,14 @@ function EditWordlist({
         setMessage(labels.msgShuffled.at(language - 1) as string);
     }
 
+    function handleSwap() {
+        const newWords = [...words];
+        const swapped = newWords.map((word) => {
+            return { word: word.meaning, meaning: word.word, isKnown: word.isKnown };
+        });
+        setWords(swapped);
+        setMessage(labels.msgSwapped.at(language - 1) as string);
+    }
 
     function handleOpenText() {
         setText('');
@@ -188,6 +196,30 @@ function EditWordlist({
     }
 
 
+    function handleReadURL(typeOfContent: string, lang: number): void {
+        console.log("handleReadURL");
+        let languageCode = 'en';
+        switch (lang) {
+            case 1:
+                languageCode = 'en';
+                break;
+            case 2:
+                languageCode = 'uk';
+                break;
+            case 3:
+                languageCode = 'ar';
+                break;
+        }
+        fetch("/flips/" + typeOfContent + " (" + languageCode + ").txt")
+            .then(response => {
+                return response.text()
+            })
+            .then(content => {
+                setText(content);
+            })
+            .catch(error => console.error(error));
+    }
+
     return (
         <div className="edit-wordlist">
 
@@ -198,17 +230,20 @@ function EditWordlist({
                 </button>
             </div>
             <div className="button-row">
+                <button className="small-button" onClick={() => handleSwap()}>
+                    {labels.doSwap.at(language - 1)}
+                </button>
                 <button className="small-button" onClick={() => handleShuffle()}>
                     {labels.doShuffle.at(language - 1)}
                 </button>
-                <button className="small-button" onClick={() => handleAddMoreWords()}>
+                <button className="small-button focus-button" onClick={() => handleAddMoreWords()}>
                     {labels.doAdd.at(language - 1)}
                 </button>
                 <button className="small-button" onClick={() => handleCleanup()}>
                     {labels.doCleanup.at(language - 1)}
                 </button>
                 <button className="small-button" onClick={() => handleNuke()}>
-                    🔥🔥🔥
+                    🔥
                 </button>
             </div>
 
@@ -254,7 +289,7 @@ function EditWordlist({
                 )}
                 {showText &&
                     <div>
-                        <button className="small-button" onClick={() => handleCloseAndUseTest()}>
+                        <button className="small-button focus-button" onClick={() => handleCloseAndUseTest()}>
                             ✚
                         </button>
                         <button className="small-button" onClick={() => setShowText(false)}>
@@ -282,14 +317,32 @@ function EditWordlist({
 
 
             {showText && (
-                <div className="text-area-wrapper">
+                <>
+                    <div className="text-area-wrapper">
 
-                    <textarea
-                        className="text-area"
-                        value={text}
-                        onChange={(e) => setText(e.target.value)}
-                    />
-                </div>
+                        <textarea
+                            className="text-area"
+                            value={text}
+                            onChange={(e) => setText(e.target.value)}
+                        />
+                    </div>
+
+                    <p>{labels.msgSample.at(language - 1)}</p>
+                    <button className="small-button" onClick={() => handleReadURL('start', language)}>
+                        1
+                    </button>
+                    <button className="small-button" onClick={() => handleReadURL('tall', language)}>
+                        2
+                    </button>
+                    <button className="small-button" onClick={() => handleReadURL('klaer', language)}>
+                        3
+                    </button>
+                    <button className="small-button" onClick={() => handleReadURL('arbeid', language)}>
+                        4
+                    </button>
+                    <br />
+                </>
+
             )}
             <br />
             <div className="download-links">
@@ -299,7 +352,6 @@ function EditWordlist({
                     </a>
                 </p>
             </div>
-            <br />
             <br />
             <br />
         </div>
