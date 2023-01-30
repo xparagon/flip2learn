@@ -2,6 +2,11 @@
 
 - next may be a re-implementation using Svelte not React
 
+## Version 0.8 - 30.01.2023
+
+Can now import .cvs files.<br />
+Using more icons for buttªons.<br />
+<br />
 ## Version 0.7 - 19.01.2023
 
 Swap word.<br />

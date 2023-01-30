@@ -44,6 +44,50 @@ function EditWordlist({
 
         const newWords = [...words];
 
+
+        // count number of lines with a comma
+        let commaCount = 0;
+        let numberOfLines = 0;
+        content.split("\n").forEach((line: string, index: number) => {
+            numberOfLines++;
+            if (line.includes(",")) {
+                commaCount++;
+            }
+        });
+        if (commaCount === numberOfLines) {
+            fromCommaFormat(content, newWords);
+        } else {
+            fromFlipFormat(content, newWords);
+        }
+        if (newWords.length > 0) {
+            setWords(newWords);
+            setMessage(labels.msgLoaded.at(language - 1) as string);
+        } else {
+            setMessage(labels.msgNoneLoaded.at(language - 1) as string);
+        }
+    };
+
+    const handleFileChosen = (e: any) => {
+        if (e.target.files.length === 0) {
+            return;
+        }
+        const file = e.target.files[0];
+        const reader = new FileReader();
+        reader.onloadend = handleFileRead;
+        reader.readAsText(file);
+    };
+
+    function fromCommaFormat(content: string, newWords: Word[]) {
+        content.split("\n").forEach((line: string, index: number) => {
+            if (line.includes(",")) {
+                const word = line.split(",")[0].trim();
+                const meaning = line.split(",")[1].trim();
+                newWords.push({ word, meaning, isKnown: false });
+            }
+        });
+    }
+
+    function fromFlipFormat(content: string, newWords: Word[]) {
         let emptyLineCount = 0;
         let wordlistStart = false;
         let wordlistEnd = false;
@@ -66,31 +110,15 @@ function EditWordlist({
                 emptyLineCount = 0;
                 if (wordlistStart && !wordlistEnd) {
                     if (word === "") {
-                        word = line;
+                        word = line.trim();
                     } else if (meaning === "") {
-                        meaning = line;
+                        meaning = line.trim();
                         newWords.push({ word, meaning, isKnown: false });
                     }
                 }
             }
         });
-        if (newWords.length > 0) {
-            setWords(newWords);
-            setMessage(labels.msgLoaded.at(language - 1) as string);
-        } else {
-            setMessage(labels.msgNoneLoaded.at(language - 1) as string);
-        }
-    };
-
-    const handleFileChosen = (e: any) => {
-        if (e.target.files.length === 0) {
-            return;
-        }
-        const file = e.target.files[0];
-        const reader = new FileReader();
-        reader.onloadend = handleFileRead;
-        reader.readAsText(file);
-    };
+    }
 
     function handleNuke() {
         const newWords: Word[] = [];
