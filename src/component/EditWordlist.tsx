@@ -179,7 +179,7 @@ function EditWordlist({
             + now.getDate() + ' '
             + now.getHours() + '.'
             + (now.getMinutes() < 10 ? '0' : '') + now.getMinutes();
-        a.download = "Flip " + dateTime + " words.txt";
+        a.download = "Flip " + dateTime + " words.csv";
         document.body.appendChild(a);
         a.click();
         window.URL.revokeObjectURL(url);
