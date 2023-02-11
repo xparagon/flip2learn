@@ -2,6 +2,11 @@
 
 - next may be a re-implementation using Svelte not React
 
+## Version 0.9 - 11.02.2023
+
+Detect .csv if there is 1 comma in the file.<br />
+Skip lines with no comma in .csv files (can be used as comment)<br />
+<br />
 ## Version 0.8 - 30.01.2023
 
 Can now import .cvs files.<br />

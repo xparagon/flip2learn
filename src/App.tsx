@@ -292,7 +292,7 @@ function App() {
           </div>
           <br />
           <details>
-            <summary>Version 0.8 - 30.01.2023</summary>
+            <summary>Version 0.9 - 11.02.2023</summary>
             <div className='about-box'>
               <b>
                 NOTE: Nothing is saved in the cloud!<br />

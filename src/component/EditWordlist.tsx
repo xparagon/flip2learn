@@ -54,7 +54,7 @@ function EditWordlist({
                 commaCount++;
             }
         });
-        if (commaCount === numberOfLines) {
+        if (commaCount > 0) {
             fromCommaFormat(content, newWords);
         } else {
             fromFlipFormat(content, newWords);
