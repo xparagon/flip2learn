@@ -159,14 +159,14 @@ function EditWordlist({
         let exportedWords = "";
         words.forEach((line) => {
             if (!(line.word === "" || line.meaning === "")) {
-                exportedWords += line.word + "\n" + line.meaning + "\n\n";
+                exportedWords += line.word + ", " + line.meaning + "\n";
             }
         });
         const fileContent =
             fileHeader +
             exportedWords +
-            "\n\nhttps://flip.fred.technology/\n" +
-            "\n\nhttps://sprakverksted.no/\n";
+            "\nhttps://flip.fred.technology/" +
+            "\nhttps://sprakverksted.no/\n";
         const blob = new Blob([fileContent], { type: "text/plain" });
         const url = window.URL.createObjectURL(blob);
         const a = document.createElement("a");
