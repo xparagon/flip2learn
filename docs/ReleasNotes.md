@@ -6,6 +6,7 @@
 
 Detect .csv if there is 1 comma in the file.<br />
 Skip lines with no comma in .csv files (can be used as comment)<br />
+Export as .csv files.<br />
 <br />
 ## Version 0.8 - 30.01.2023
 
