@@ -1,5 +1,6 @@
-import React, { useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { Labels, Word } from "../types";
+
 
 interface EditWordlistProps {
     language: number;
@@ -34,6 +35,14 @@ function EditWordlist({
         // @ts-ignore
         inputEl.current.click();
     }
+    function loadCSVFile() {
+        fetch("./flip.csv")
+            .then(res => { return res.text() })
+            .then(text => {
+                fillWordsFromContent(text);
+            }
+            );
+    }
 
     const handleFileRead = (e: any) => {
         const content = e.target.result;
@@ -41,10 +50,7 @@ function EditWordlist({
     }
 
     function fillWordsFromContent(content: string) {
-
         const newWords = [...words];
-
-
         // count number of lines with a comma
         let commaCount = 0;
         let numberOfLines = 0;
@@ -125,6 +131,7 @@ function EditWordlist({
         newWords.unshift({ word: "", meaning: "", isKnown: false });
         setWords(newWords);
     }
+
     function handleCleanup() {
         // remove known and empty words
         const filtered = words.filter(
@@ -281,9 +288,7 @@ function EditWordlist({
 
             <hr />
             <div className="button-row">
-                <button className="small-button" onClick={() => saveFile()}>
-                    {labels.doExport.at(language - 1)}
-                </button>
+
                 {!showText && (
 
                     <button className="small-button focus-button" onClick={() => handleOpenText()}>
@@ -302,9 +307,16 @@ function EditWordlist({
                     </div>
                 }
 
+                <button className="small-button" onClick={() => saveFile()}>
+                    {labels.doExport.at(language - 1)}
+                </button>
 
                 <button className="small-button" onClick={() => loadFile()}>
                     {labels.doImport.at(language - 1)}
+                </button>
+
+                <button className="small-button" onClick={() => loadCSVFile()}>
+                    +280   {labels.words.at(language - 1)}
                 </button>
             </div>
 

@@ -1,0 +1,289 @@
+og,and | і | и | و
+i,in | в/у | в | في
+det,that | це | это | الذي - التي
+på,on | на | на | على
+som,as | як | как/ в качестве | مثل
+er,is | є | является | يكون
+en,a/one | один | один | واحد
+til,to | до (в напрямку) | до | ل
+han,he | він | он | هو
+av,of | з | из | ل
+for,for | для | для | ل
+med,with | з | с | مع
+at,that | що.... | что.... | الذي - التي
+ikke,not | ні | нет | لا
+"å ha, har","to have, have | мати | иметь | أن يكون لديك"
+jeg,I | я | я | أنا
+men,but | але | но | لكن
+hun,she | вона | она | هي
+hadde,had | мав | имел | ملك
+fra,from | з(звідки) | из | من
+vi,we | ми | мы | نحن
+du,you | ти | ты | أنت
+kan,can | могти | мочь | يستطيع
+ble,became | став | стал | أصبح
+ut,out | зовні (в направленні: виходити назовні) | наружу | خارج
+skal,shall | збиратися(щось зробити) | собираться (что-то сделать) | سوف
+vil,will | бажати/ хотіти | хотеть | سوف
+etter,after | після | после | بعد
+over,above | над | над | فوق
+også,also | також | тоже | أيضًا
+nå,now | зараз | сейчас | الآن
+dette,this | це | это | هذا
+noe,something | щось | Что-то | شئ ما
+meg,me | мені | мне | أنا
+opp,up | вгору | вверх | أعلى
+der,there | там | там | هناك
+når,when | коли | когда | متى
+noen,some | деякі | некоторые | بعض
+sier,says | кажу | говорю | يقول
+hans,his | його | его | له
+bli,become | ставати | становиться | يصبح
+ville,wanted | розшуканий | в розыске | مطلوب
+før,before | перед | перед | قبل
+skulle,should have | повинні мати | должен иметь | يجب ان
+her,here | тут | здесь | هنا
+mer,more | більше | больше | أكثر
+hva,what | что? | что? | ماذا
+igjen,again | знову | опять | مرة أخرى
+fikk,got | отримав | получил | يملك
+alt,everything | все | всё | كل شئ
+mange,many | багато | много | كثير
+ingen,none | немає | нет | لا أحد
+oss,us | нас | нас | نحن
+hvor,where | де?куди? | где?куда? | أين
+under,under | під | под | تحت
+siden,since | тому що/оскільки | так как | منذ
+dag,day | день | день | يوم
+sammen,together | разом | вместе | معاً
+,
+Fortid  - Nåtid - Fremtid,Past - present - future | Минуле - теперішнє - майбутнє | Прошедшее настоящее будущее | الماضي - الحاضر - المستقبل
+før - nå - en gang,before - now - once | раніше - зараз - колись | до - сейчас - один раз | قبل - الآن - مرة واحدة
+tidliger - lenge siden - lenge til,earlier - long ago - long to | Раніше - давно - давно | ранее - давно - долго | في وقت سابق - منذ فترة طويلة - طويل ل
+"å være, er, var, har vært","to be, is, was, has been | бути, це було, було | Быть, был, был | أن يكون ، هو ، كان ، لقد كان"
+"å ville, vil, ville, har villet","to want, will, would, have wanted | бажати, буде, хотів би хотіти | хотеть, желать, хотел бы | لتريد ، ويل ، كان ، كان يريد"
+"å få, får, fikk, har fått, få!","To get, get, get, have got, get! | Отримати, дістатися, дістати, дістати, дістатися! | Получить, получить, получить, получить, получить! | للحصول على ، الحصول ، الحصول على ، الحصول على ، الحصول على!"
+"å gi, gir, gav, har gitt, gi!","To give, give, give, have given, give! | Дай, дарувати, дати, подарувати, дати! | Дать, дай, дай, дай, дай! | لإعطاء ، إعطاء ، إعطاء ، أعطوا ، إعطاء!"
+"å hente, henter, hentet,","to pick up, pick up, retrieved, | підібрати, підібрати, отримати, | забрать, забрать, восстановить, | لالتقاط ، والتقاط ، واسترجاع ،"
+"har hentet, hent!","Have picked up, get! | Підібрали, дістаньте! | Подобрали, получи! | التقطت ، احصل!"
+"å gjøre, gjør, gjorde,","to do, do, did, | робити, робити, робити, | делать, делать, сделать, | للقيام بذلك ، افعل ،"
+"har gjort, gjør!","Have done, do! | Зроби, зробіть! | Сделал, делай! | فعلت ، افعل!"
+"å finne, finner, fant,","to find, find, found, | знайти, знайти, знайти, | найти, найти, найти, | للعثور ، وجدت ، وجدت ،"
+"har funnet, finn!","Have found, find! | Знайдіть, знайдіть! | Нашел, найдите! | وجدت ، تجد!"
+klokke,clock | годинник | Часы | ساعة
+"time, minutt, sekund","hour, minute, second | Година, хвилина, друге | час, минута, второй | ساعة ، دقيقة ، ثانية"
+"dag, uke, måned, år","day, week, month, year | день, тиждень, місяць, рік | День, неделя, месяц, год | يوم اسبوع شهر سنة"
+"i morgen, i går,","tomorrow, yesterday, | Завтра, вчора, | Завтра вчера, | غدا امس،"
+"mandag, tirsdag, onsdag,","Monday Tuesday Wednesday, | Понеділок у вівторок середа, | Понедельник вторник среда, | الاثنين، الثلاثاء، الاربعاء،"
+"torsdag, fredag, lørdag, søndag","Thursday, Friday, Saturday, Sunday | Четвер, п’ятниця, субота, неділя | Четверг, пятница, суббота, воскресенье | خميس جمعة سبت احد"
+"januar, februar, mars, april, mai, juni, juli, august, september, oktober, november, desember","January, February, March, April, May, June, July, August, September, October, November, December | Січень, лютий, березень, квітень, травень, червень, липень, серпень, вересень, жовтень, листопад, грудень | Январь, февраль, март, апрель, май, июнь, июль, август, сентябрь, октябрь, ноябрь, декабрь | يناير ، فبراير ، مارس ، أبريل ، مايو ، يونيو ، يوليو ، أغسطس ، سبتمبر ، أكتوبر ، نوفمبر ، ديسمبر"
+årstider,seasons | пори року | времена года | مواسم
+"vår, sommer, høst, vinter",spring Summer Autumn Winter | весна літо осінь зима | весна лето осень зима | الربيع الصيف الخريف الشتاء
+Hvor er du fra?,Where are you from? | Звідки ти родом? | Откуда ты? | من أين أنت؟
+Hvor var du før du kom til Norge?,"Where were you before you came to Norway? | Де ви були до того, як ви приїхали до Норвегії? | Где вы были до того, как приехали в Норвегию? | أين كنت قبل أن تأتي إلى النرويج؟"
+Hva vil du drikke? Te eller kaffe?,What do you want to drink? Tea or coffee? | Що ви хочете пити? Чай чи кава? | Что ты хочешь выпить? Чай или кофе? | ماذا تريد أن تشرب؟ شاي أو قهوة؟
+Hva får vi i dag? Te eller kaffe?,What do we get today? Tea or coffee? | Що ми отримуємо сьогодні? Чай чи кава? | Что мы получаем сегодня? Чай или кофе? | ماذا نحصل اليوم؟ شاي أو قهوة؟
+Hva vil du ha? Hva fikk du?,What do you want? What did you get? | Що ти хочеш? Що ти отримав? | Что ты хочешь? Что ты получил? | ماذا تريد؟ على ماذا حصلت؟
+Kan du hente kaffe?,Can you pick up coffee? | Чи можете ви забрати каву? | Вы можете забрать кофе? | هل يمكنك التقاط القهوة؟
+Har du hentet melk til kaffen?,Have you picked up milk for the coffee? | Ви взяли молоко для кави? | Вы взяли молоко для кофе? | هل التقطت الحليب لتناول القهوة؟
+Fant du melken?,Did you find the milk? | Ви знайшли молоко? | Вы нашли молоко? | هل وجدت الحليب؟
+Kan du finne druene på kjøkkenet?,Can you find the grapes in the kitchen? | Чи можете ви знайти виноград на кухні? | Можете ли вы найти виноград на кухне? | هل يمكنك العثور على العنب في المطبخ؟
+Når kom du? Når skal du dra?,When did you come? When are you leaving? | Коли ти прийшов? Коли ви їдете? | Когда вы пришли? Когда вы уезжаете? | متى اتيت؟ متى ستغادر؟
+Hva er klokken?,What time is it? | Котра година? | Который сейчас час? | أي ساعة؟
+Hvilken dato er det?,What date is that? | Яка це дата? | Какая это дата? | ما هو التاريخ؟
+Hvilken måned er du født?,What month are you born? | Який місяць ти народився? | В каком месяце ты родился? | في أي شهر ولدت؟
+Hvilken årstid liker du best?,Which season do you like the most? | Який сезон вам найбільше подобається? | Какой сезон тебе нравится больше всего? | في أي موسم تحب أكثر؟
+Liker du masse snø om vinteren?,Do you like lots of snow in winter? | Вам подобається багато снігу взимку? | Вам нравится много снега зимой? | هل تحب الكثير من الثلج في فصل الشتاء؟
+få tid til,make time | Зробіть час | уделить время | اعمل بالوقت
+få anledning til,get the opportunity | Отримати можливість | Получите возможность | احصل على الفرصة
+få bruk for,use | використання | использовать | يستخدم
+få saken ut av verden,Get the matter out of the world | Вийміть справу зі світу | Вывести дело из мира | احصل على المسألة من العالم
+få motoren i gang,Get the engine running | Отримайте двигун | Запустить двигатель | احصل على تشغيل المحرك
+få greie på,get to know | Дізнайся | узнать | بدأ أن يفهم
+få ned maten,bring down the food | Збийте їжу | сбивать с собой еду | أسقط الطعام
+nå og da,now and then | зараз і потім | сейчас и потом | الأن و لاحقا
+av og til,occasionally | інколи | изредка | أحياناً
+nå noen over telefon,Now someone over the phone | Тепер хтось по телефону | Теперь кто -то по телефону | الآن شخص ما عبر الهاتف
+jeg er straks tilbake,I'll be right back | Я повернусь назад | Я скоро вернусь | سأعود حالا
+jeg skal være der hele dagen,I'll be there all day | Я буду там цілий день | Я буду там весь день | سأكون هناك طوال اليوم
+det får heller være,it should rather be | це повинно бути | это должно быть | يجب أن يكون بالأحرى
+det kan være til i morgen,It may be until tomorrow | Це може бути до завтра | Это может быть до завтра | قد يكون حتى الغد
+er du med? – forstår du?,are you with? - do you understand? | Ви з? - ти розумієш? | ты с? - вы понимаете? | هل انت مع؟ - هل تفهم؟
+"strømmen er av, på","The power is off, on | Сила вимкнена, | Сила выключена, на | القوة متوقفة ، على"
+genseren var av ull,The sweater was of wool | Светр був з вовни | Свитер был из шерсти | كانت السترة من الصوف
+det er i morgen de kommer,It's tomorrow they're coming | Завтра вони приходять | Завтра они придут | إنه غدًا قادمون
+"morgen, formiddag,","Morning, morning, | Ранок, вранці, | Утро, утро, | صباح ، صباح ،"
+"middag, ettermiddag,","Dinner, afternoon, | Вечеря, вдень, | Ужин, днем, | عشاء ، بعد الظهر ،"
+"kveld, natt","evening, night | Вечір, ніч | Вечер, ночь | مساء ، الليل"
+"tidlig, sent","early, late | рано, пізно | рано поздно | مبكرا متاخر"
+"tidligere, senere","earlier, later | Раніше, пізніше | раньше, позже | في وقت سابق ، في وقت لاحق"
+for lenge siden,a long time ago | давним-давно | давным давно | منذ وقت طويل
+jeg har jobbet i ett år,I've been working for one year | Я працюю один рік | Я работаю на один год | لقد كنت أعمل لمدة عام واحد
+jeg skal reise om noen uker,I'll be traveling in a few weeks | Я буду подорожувати через кілька тижнів | Я буду путешествовать через несколько недель | سأسافر في غضون أسابيع قليلة
+,
+Tall,Number | Число | Число | رقم
+telle,count | рахувати | считать | عدد
+nummer,number | число | число | رقم
+siffer,digit | цифра | цифра | رقم
+heltall,integer | ціле число | целое число | عدد صحيح
+desimaltall,decimal | десятковий | десятичная дробь | عدد عشري
+desimaler,decimals | десятки | Десятичные | العشرية
+komma,comma | кома | запятая | فاصلة
+brøk,fraction | частка | доля | جزء
+teller,counter | протистояти | прилавок | عداد
+nevner,mention | згадувати | упомянуть | يذكر
+kvart 1/4,quarter 1/4 | чверть 1/4 | Квартал 1/4 | الربع 1/4
+fjerdedel 1/4,quarter 1/4 | чверть 1/4 | Квартал 1/4 | الربع 1/4
+halv  1/2,half 1/2 | половина 1/2 | половина 1/2 | نصف 1/2
+tre fjerdedel 3/4,threequarter 3/4 | Три квартал 3/4 | Трехэтапный 3/4 | ثلاثة مرور 3/4
+hel,whole | цілий | весь | جميع
+plus,plus | плюс | плюс | زائد
+minus,minus | мінус | минус | ناقص
+gange,multiply | помножити | умножить | تتضاعف
+dele,devide | відхилятися | охватить | ديفيد
+antall,Number | Число | Число | رقم
+beløp,amount | обсяг | количество | كمية
+null,zero | нуль | нуль | صفر
+en / ett,one | один | один | واحد
+to,two | два | два | اثنين
+tre,three | три | три | ثلاثة
+fire,four | чотири | четыре | أربعة
+fem,five | п'ять | пять | خمسة
+seks,six | шість | шесть | ستة
+sju / syv,seven | сім | Семь | سبعة
+åtte,eight | вісім | восемь | ثمانية
+ni,nine | дев'ять | девять | تسع
+ti,ten | десять | десять | عشرة
+elleve,eleven | одинадцять | одиннадцать | أحد عشر
+tolv,twelve | дванадцять | двенадцать | اثني عشر
+tretten,thirteen | тринадцять | тринадцать | ثلاثة عشر
+fjorten,fourteen | Чотирнадцять | четырнадцать | أربعة عشرة
+femten,fifteen | п’ятнадцять | пятнадцать | خمسة عشر
+seksten,sixteen | шістнадцять | шестнадцать | السادس عشر
+sytten,seventeen | сімнадцять | семнадцать | سبعة عشر
+atten,eighteen | вісімнадцять | восемнадцать | الثامنة عشر
+nitten,nineteen | дев'ятнадцять | девятнадцать | تسعة عشر
+tjue,twenty | двадцять | двадцать | عشرين
+tretti,thirty | тридцять | тридцать | ثلاثون
+førti,forty | сорок | сорок | أربعين
+femti,fifty | п’ятдесят | пятьдесят | خمسون
+seksti,sixty | шістдесят | шестьдесят | ستين
+sytti,seventy | сімдесят | семьдесят | سبعون
+åtti,eighty | вісімдесят | восемьдесят | ثمانون
+nitti,ninety | дев'яносто | девяносто | تسعين
+hundre,hundred | сотня | сотня | مائة
+ett tusen,one thousand | одна тисяча | одна тысяча | ألف
+en million,a million | мільйон | миллион | مليون
+en milliard,one billion | один мільярд | один миллиард | مليار واحد
+en billiard,a billiard | більярд | бильярд | البلياردو
+null komma en,zero comma one | нульова кома одна | Ноль запятой один | صفر فاصلة واحد
+en tidel,one tenth | Один десятий | одна десятая | عُشر واحد
+en hundredel,a hundredth | сота | сотый | مائة
+en prosent,one percent | один відсоток | один процент | واحد بالمئة
+,
+Gravide og babyer,Pregnant and babies | Вагітна і немовлята | Беременные и дети | الحامل والرضع
+"Svangerskap, foster","Pregnancy, fetus | Вагітність, плід | Беременность, плод | الحمل ، الجنين"
+"rier, ultralyd","rier, ultrasound | rier, УЗД | Rier, Ultrasound | راير ، الموجات فوق الصوتية"
+"baby, nyfødt, barnevogn","baby, newborn, stroller | Дитина, новонароджена, коляска | ребенок, новорожденный, коляска | طفل ، حديثي الولادة ، عربة"
+Helsestasjon,health centre | медичний центр | центр здоровья | مركز صحي
+Barseltid,Maternity | Материнство | Материнство | التوليد
+Jordmor,Midwife | Акушерка | Акушерка | قابلة
+Har du kjent på magen til den gravide når en baby sparker?,"Have you felt the stomach of the pregnant woman when a baby kicks? | Ви відчували живіт вагітної жінки, коли дитина б'є? | Вы почувствовали желудок беременной женщины, когда пинает ребенка? | هل شعرت بمعدة المرأة الحامل عندما يركل الطفل؟"
+Hva tenker du om hjemmefødsel?,What do you think about home birth? | Що ви думаєте про домашнє народження? | Что вы думаете о домашних родах? | ما رأيك في الولادة في المنزل؟
+Mottaksrom på fødeavdeling,Reception room at maternity ward | Резерційна кімната в материнському відділенні | Приемная комната в материнском отделении | غرفة الاستقبال في جناح الأمومة
+"Fødsel, å føde","Birth, to give birth | Народження, народити | Рождение, родить | الولادة للولادة"
+navlestreng,umbilical cord | пуповина | пуповина | حبل سري
+keisersnitt,cesarean | Loading... | Loading... | Loading...
+gynekolog,gynecologist | гінеколог | гинеколог | دكتور امراض نساء
+bedøvelse,anesthetic | знеболюючий | анестетик | مخدر
+Fødselsdepresjon,Birth depression | Депресія народження | Врожденная депрессия | الاكتئاب الولادة
+amming,breastfeeding | годування грудьми | грудное вскармливание | الرضاعة الطبيعية
+bleier,diapers | пелюшки | подгузники | حفاضات
+"Sykehus, apotek og medisin","Hospital, pharmacy and medicine | Лікарня, аптека та медицина | Больница, аптека и медицина | المستشفيات والصيدلة والطب"
+Undersøkelse,Examination | Обстеження | Экзамен | فحص
+"Smerte, vondt, ubehag","Pain, pain, discomfort | Біль, біль, дискомфорт | Боль, боль, дискомфорт | الألم والألم والانزعاج"
+Behandling,Treatment | Loading... | Loading... | Loading...
+Operasjon,Operation | Операція | Операция | عملية
+"Lege, doktor","Doctor, doctor | Лікар, лікар | Доктор, доктор | طبيب ، دكتور"
+"Diagnose, sykdomsforløp","Diagnosis, disease course | Loading... | Loading... | Loading..."
+"Sykepleier, hjelpepleier","Nurse, auxiliary nurse | Медсестра, допоміжна медсестра | Медсестра, вспомогательная медсестра | ممرضة ، ممرضة مساعدة"
+"Pasient, pasientjournal","Patient, patient record | Пацієнт, запис пацієнта | Пациент, запись пациента | سجل المريض ، المريض"
+Pårørende,Relatives | Родичі | Родственники | الأقارب
+Laboratorie,Laboratory | Лабораторія | Лаборатория | معمل
+Prøver,Trial | Суд | Пробный | محاكمة
+Resultat,Result | Результат | Результат | نتيجة
+"Blodprøve, urinprøve","Blood test, urine sample | Loading... | Loading... | Loading..."
+Besøkstider,Visitor times | Час відвідувачів | Времени для посетителей | أوقات الزوار
+Innkalling,Notice | Loading... | Loading... | Loading...
+Konsultasjon,Consultation | Консультація | Консультация | التشاور
+"kam, børste","comb, brush | гребінець, щітка | расческа, кисть | فرشاة مشط"
+"shampoo, såpe","shampoo, soap | шампунь, мило | Шампунь, мыло | الشامبو ، الصابون"
+"saks, klippe håret, frisør","scissors, cut hair, hairdresser | ножиці, стрижки волосся, перукар | ножницы, стричья волосы, парикмахер | مقص ، شعر مقطوع ، مصفف الشعر"
+"tannkrem, tannbørste","toothpaste, toothbrush | зубна паста, зубна щітка | Зубная паста, зубная щетка | معجون الأسنان ، فرشاة الأسنان"
+"toalett, do, wc, tisse, bæsje,","Toilet, do, wc, pee, poop, | Туалет, do, wc, pee, poop, | Туалет, до, WC, моча, какашка, | المرحاض ، افعل ، WC ، بول ، أنبوب ،"
+"vaske hender, vaske håret, dusje, bade","wash hands, wash your hair, shower, bathe | Вимийте руки, мийте волосся, душ, купайте | вымыть руки, вымойте волосы, душ, купание | اغسل اليدين ، اغسل شعرك ، دش ، حمام"
+"håndvask, servant, kran, sluk,","Hand wash, washbasin, crane, gutter, | Ручне миття, умивальник, кран, жолоб, | Ручная мыть, мытья басин, кран, желоб, | غسل اليد ، واشباسين ، رافعة ، مزراب ،"
+"badekar, dusj, morgenkåpe, tøfler","bathtub, shower, robe, slippers | ванна, душ, халат, тапочки | Ванна, душ, халат, тапочки | حوض الاستحمام ، دش ، رداء ، نعال"
+"håndkle, vaskeklut, gjestehåndkle","Towel, washcloth, guest towel | Рушник, мочал, гостьовий рушник | Полотенце, мытья тростника, гостевое полотенце | منشفة ، منشفة ، منشفة ضيف"
+"søvn, sove, være våken","sleep, sleep, be awake | спати, спати, прокинутися | спать, спать, бодрствовать | النوم ، النوم ، كن مستيقظا"
+"være trøtt, være opplagt","be tired, be obvious | Будьте втомлені, будьте очевидними | уставай, будь очевидным | كن متعبًا ، كن واضحًا"
+"trening, kosthold, ernæring","exercise, diet, nutrition | фізичні вправи, дієта, харчування | физические упражнения, диета, питание | التمرين ، النظام الغذائي ، التغذية"
+"spise sunt, ta vitaminer og medisiner","eat healthy, take vitamins and medications | Їжте здорові, приймайте вітаміни та ліки | Ешьте здоровую пищу, принимайте витамины и лекарства | تناول الطعام الصحي ، وتناول الفيتامينات والأدوية"
+,
+Blir du ofte syk?,Do you often get sick? | Ви часто захворієте? | Вы часто заболели? | هل تمرض في كثير من الأحيان؟
+Hvordan holder du deg i form?,How do you keep in shape? | Як ви підтримуєте форму? | Как вы сохраняете форму? | كيف تحافظ على الشكل؟
+Liker du å gå ut på tur?,Do you like to go on a trip? | Ви любите їхати в подорож? | Вы любите отправиться в поездку? | هل تحب الذهاب في رحلة؟
+Hva er nødvendig å ha med når vi er på tur?,"What is necessary to bring when we are traveling? | Що потрібно принести, коли ми подорожуємо? | Что необходимо принести, когда мы путешествуем? | ما هو ضروري لجلبه عندما نسافر؟"
+Hva tar du på deg når du skal på tur?,"What do you take on when you are going on a trip? | Що ви берете на себе, коли їдете в поїздку? | Что вы берете, когда отправляетесь в поездку? | ما الذي تأخذه عندما تقوم في رحلة؟"
+Hva spiser du til frokost og lunsj?,What do you eat for breakfast and lunch? | Що ви їсте на сніданок та обід? | Что вы едите на завтрак и обед? | ماذا تأكل على الإفطار والغداء؟
+"Tar du med matpakke hjemmefra, eller kjøper du mat i lunsjpausen?","Do you bring a packed lunch, or do you buy food during the lunch break? | Ви приносите упакований обід, чи купуєте їжу під час обідньої перерви? | Вы приносите упакованный обед или покупаете еду во время обеденного перерыва? | هل تحضر وجبة غداء مزدحمة ، أم تشتري الطعام أثناء استراحة الغداء؟"
+Hva likte du å spise du da du var yngre?,"What did you like to eat you when you were younger? | Що ви любили їсти вас, коли були молодшими? | Что вы хотели съесть вас, когда были моложе? | ماذا كنت تحب أن تأكلك عندما كنت أصغر سنا؟"
+Feirer du jul? Hva gjør du da?,Do you celebrate Christmas? What do you do? | Ви святкуєте Різдво? Що ти робиш? | Вы празднуете рождество? Что вы делаете? | هل تحتفل بعيد الميلاد؟ ماذا تفعل؟
+Gir dere hverandre gaver til Jul?,Do you give each other gifts for Christmas? | Ви даруєте один одному подарунки на Різдво? | Вы даете друг другу подарки на Рождество? | هل تعطي بعضها البعض هدايا لعيد الميلاد؟
+Hvilke høytider har dere i hjemlandet ditt?,What holidays do you have in your home country? | Які свята у вас є у вашій країні? | Какие праздники у вас есть на родной стране? | ما هي العطلات التي لديك في بلدك الأم؟
+Hvem skal oppdra barna? Skal besteforeldre «lukke øyne og munn» og overlate det til foreldrene?,"Who will raise the children? Should grandparents ""close eyes and mouth"" and leave it to the parents? | Хто виховуватиме дітей? Чи повинні бабусі та дідусі ""закрити очі і рот"" і залишати їх батькам? | Кто воспитывает детей? Должны ли бабушка и дедушка «закрывать глаза и рот» и оставить это родителям? | من سيرفع الأطفال؟ هل يجب على الأجداد ""عيونًا وفمًا"" وتركها للوالدين؟"
+"Hvem har påvirket deg mest i oppveksten? Foreldrene? Besteforeldrene? Søsken? Venner? Skolen? Naboer? 
+Bøker? TV?","Who has influenced you the most while growing up? Parents? The grandparents? Sibling? Friends? The school? Neighbours?
+Books? TV? | Хто найбільше вплинув на вас під час дорослішання? Батьки? Бабусі та дідусі? Брат? Друзі? Школа? Сусіди?
+Книги? Телевізор? | Кто повлиял на вас больше всего во время роста? Родители? Бабушка и дедушка? Брат или сестра? Друзья? Школа? Соседи?
+Книги? ТВ? | من الذي أثر عليك أكثر أثناء نشأتك؟ آباء؟ الأجداد؟ أخ أو أخت؟ أصدقاء؟ المدرسة؟ الجيران؟
+كتب؟ تلفزيون؟"
+Hvordan behandler du foreldrene dine når de blir gamle? Passer du på dem eller sender du dem til aldershjem?,"How do you treat your parents when they grow old? Do you take care of them or do you send them to nursing homes? | Як ви ставитесь до батьків, коли вони старіють? Ви піклуєтесь про них чи відправляєте їх до будинків престарілих? | Как вы относитесь к родителям, когда они стареют? Вы заботитесь о них или отправляете их в дома престарелых? | كيف تعامل والديك عندما يكبرون؟ هل تعتني بهم أم ترسلهم إلى دور رعاية المسنين؟"
+Hvordan vil du selv bo når du blir gammel? Forventer du at familien din skal ta seg av deg?,"How do you want to stay when you grow old? Do you expect your family to take care of you? | Як ви хочете залишитися, коли постарієте? Ви очікуєте, що ваша родина піклується про вас? | Как вы хотите остаться, когда стареете? Вы ожидаете, что ваша семья позаботится о вас? | كيف تريد البقاء عندما تكبر؟ هل تتوقع أن تعتني عائلتك بك؟"
+Hvor ofte kjøper du klær?,How often do you buy clothes? | Як часто ви купуєте одяг? | Как часто вы покупаете одежду? | كم من المرات تشتري الملابس؟
+Arver de minste barna klær fra de eldste i din familie?,Inherit the smallest kids clothes from the elders in your family? | Успадкувати найменший дитячий одяг від старших у вашій родині? | Унаследовать самую маленькую детскую одежду от старейшин в вашей семье? | يرث أصغر ملابس الأطفال من كبار السن في عائلتك؟
+Hva har du på deg i dag?,What are you wearing today? | Що ви носите сьогодні? | Что ты носишь сегодня? | ماذا ترتدين اليوم؟
+Spiser du sunt eller usunt?,Do you eat healthy or unhealthy? | Ви їсте здорово чи нездорове? | Вы едите здоровое или нездоровое? | هل تأكل بصحة جيدة أو غير صحية؟
+Foretrekker du å spise vegetar eller kjøtt?,Do you prefer to eat vegetarian or meat? | Ви вважаєте за краще їсти вегетаріанське чи м'ясо? | Вы предпочитаете есть вегетарианское или мясо? | هل تفضل أن تأكل نباتيًا أو لحومًا؟
+Påvirker det som vi spiser miljøet? På hvilken måte?,"Does what we eat the environment affect? In what way? | Чи впливає те, що ми їмо навколишнє середовище? Яким чином? | Влияет ли на то, на что мы едим окружающую среду? В каком смысле? | هل ما نأكله يؤثر على البيئة؟ في أي طريق؟"
+Liker du godteri? Er det mulig å unngå å spise godteri?,Do you like candy? Is it possible to avoid eating candy? | Ви любите цукерки? Чи можливо уникати їжі цукерки? | Тебе нравятся конфеты? Можно ли избежать употребления конфет? | هل تحب الحلوى؟ هل من الممكن تجنب تناول الحلوى؟
+Hva kan brukes i stedet for godteri?,What can be used instead of candy? | Що можна використовувати замість цукерки? | Что можно использовать вместо конфет? | ماذا يمكن استخدامه بدلاً من الحلوى؟
+Hvor ofte reiser du i løpet av året?,How often do you travel during the year? | Як часто ви подорожуєте протягом року? | Как часто вы путешествуете в течение года? | كم مرة تسافر خلال العام؟
+Hvordan liker du å overnatte i et telt?,How do you like to spend the night in a tent? | Як ви любите проводити ніч у наметі? | Как вам нравится провести ночь в палатке? | كيف تحب قضاء الليل في خيمة؟
+Hvor mange land har du reist til?,How many countries have you traveled to? | Скільки країн ви подорожували? | Во сколько стран вы поехали? | ما عدد الدول التي سافرت إليها؟
+Er det viktig å reise?,Is it important to travel? | Чи важливо подорожувати? | Важно путешествовать? | هل من المهم السفر؟
+Hvor ofte reiser du til hjemlandet ditt?,How often do you travel to your home country? | Як часто ви подорожуєте до рідної країни? | Как часто вы путешествуете в свою страну? | كم مرة تسافر إلى وطنك؟
+Gjorde du noe for å sikre et godt førsteinntrykk ved første intervju?,"Did you do anything to ensure a good first impression at the first interview? | Ви щось зробили, щоб забезпечити гарне перше враження на першому інтерв'ю? | Вы сделали что -нибудь, чтобы обеспечить хорошее первое впечатление на первом интервью? | هل فعلت أي شيء لضمان انطباع أول جيد في المقابلة الأولى؟"
+Hvilke egenskaper har du som gjør at du passer til jobben?,"What qualities do you have that make you fit the job? | Які якості у вас є, що змушує вас відповідати роботі? | Какие качества у вас есть, это заставляет вас подходить на работу? | ما هي الصفات التي تجعلك تناسب الوظيفة؟"
+Har du noen hobbyer?,Do you have any hobbies? | У вас є хобі? | Есть ли у вас хобби? | هل لديك أية هوايات؟
+Hva gjorde du for å finne den jobben som du har nå?,"What did you do to find the job you have now? | Що ви зробили, щоб знайти роботу, яку ви маєте зараз? | Что вы сделали, чтобы найти работу, которую у вас есть сейчас? | ماذا فعلت للعثور على الوظيفة التي لديك الآن؟"
+Hvor viktig tror du det er med gode norskkunnskaper i din stilling?,"How important do you think it is with good Norwegian knowledge in your position? | Наскільки важливим ви думаєте, що це з добрими норвезькими знаннями у вашій позиції? | Как вы думаете, насколько это важно с хорошими норвежскими знаниями на вашей позиции? | ما مدى أهمية ذلك مع معرفة نرويجية جيدة في موقفك؟"
+Hvor viktor tror du det er å kunne snakke flytende norsk neste gang du skal søke jobb?,"How Viktor do you think it is to be able to speak fluent Norwegian the next time you apply for a job? | Як ви вважаєте, як Віктор, щоб мати можливість вільно говорити норвезькою мовою наступного разу, коли ви подаєте заявку на роботу? | Как вы думаете, насколько виктором будет свободно говорить о норвежском языке в следующий раз, когда вы подаете заявку на работу? | كيف تعتقد أن Viktor هو أن تكون قادرًا على التحدث باللغة النرويجية بطلاقة في المرة القادمة التي تتقدم فيها للحصول على وظيفة؟"
+Har du en jobb som du liker?,"Do you have a job that you like? | У вас є робота, яка вам подобається? | У вас есть работа, которая вам нравится? | هل لديك وظيفة تحبها؟"
+Får du brukt din utdanning i den jobben du har nå?,"Do you get to use your education in the job you have now? | Чи можете ви використовувати свою освіту на роботі, яку ви маєте зараз? | Вы можете использовать свое образование на работе, которая у вас есть сейчас? | هل يمكنك استخدام تعليمك في الوظيفة التي لديك الآن؟"
+Hvilke utfordringer håper du å få anledning til å jobbe med?,What challenges do you hope to have the opportunity to work with? | Які виклики ви сподіваєтесь мати можливість працювати? | С какими проблемами вы надеетесь иметь возможность поработать? | ما هي التحديات التي تأمل أن تتاح لها الفرصة للعمل معها؟
+Hvordan er arbeidsforholdene der du arbeider?,"How are the working conditions where you work? | Як умови праці, де ви працюєте? | Как условия труда, где вы работаете? | كيف هي ظروف العمل التي تعمل فيها؟"
+Synes du at det er likestilling i arbeidslivet?,"Do you think there is equality in the working life? | Ви вважаєте, що в трудовому житті є рівність? | Как вы думаете, в трудовой жизни есть равенство? | هل تعتقد أن هناك مساواة في الحياة العملية؟"
+Har du hørt om yrker hvor de sliter med likestilling?,"Have you heard of professions where they struggle with equality? | Ви чули про професії, де вони борються з рівністю? | Вы слышали о профессиях, где они борются с равенством? | هل سمعت عن المهن التي يكافحون مع المساواة؟"
+Er det noen yrker du ikke kan tenke deg at en mann eller dame bør ha?,"Are there any professions you can't imagine a man or lady should have? | Чи є якісь професії, які ви не можете собі уявити, як повинен мати чоловік чи дама? | Есть ли какие -либо профессии, которые вы не можете себе представить, чтобы иметь мужчину или леди? | هل هناك أي مهن لا يمكنك أن تتخيل وجود رجل أو سيدة؟"
+Hvordan reagerer du hvis sjefen spør om du kan hente kaffe til et møte? eller rydde etter møte?,"How do you react if the boss asks if you can get coffee for a meeting? Or clear after meeting? | Як ви реагуєте, якщо начальник запитує, чи зможете ви отримати каву на зустріч? Або зрозуміло після зустрічі? | Как вы отреагируете, если босс спрашивает, можете ли вы получить кофе для встречи? Или ясно после встречи? | كيف تتفاعل إذا كان الرئيس يسأل عما إذا كان يمكنك الحصول على القهوة للاجتماع؟ أو واضح بعد الاجتماع؟"
+Er du villig til å jobbe overtid flere helger etter hverandre hvis det var for å fikse et problem?,"Are you willing to work overtime more weekends in succession if it was to fix a problem? | Чи готові ви працювати понаднормові вихідні поспіль, якщо це було вирішити проблему? | Готовы ли вы работать сверхурочно больше выходных подряд, если это было решить проблему? | هل أنت على استعداد للعمل الإضافي في عطلات نهاية الأسبوع على التوالي إذا كان ذلك لإصلاح مشكلة؟"
+Hva bør skolen legge vekt på?,What should the school focus on? | На чому повинна бути зосереджена школа? | На чем следует сосредоточиться на школе? | ما الذي يجب أن تركز عليه المدرسة؟
+Hva er en god lærer?,What is a good teacher? | Що таке хороший вчитель? | Что такое хороший учитель? | ما هو المعلم الجيد؟
+Hvilke fag er viktige?,Which subjects are important? | Які предмети важливі? | Какие предметы важны? | أي الموضوعات مهمة؟
+Må skolen ha streng disiplin?,Does the school have strict discipline? | Чи є у школі сувору дисципліну? | Есть ли у школы строгая дисциплина? | هل المدرسة لديها انضباط صارم؟
+I hvilken grad påvirker karakter  hvilken jobb en kan få?,"To what extent does character affect what job one can get? | Наскільки персонаж впливає на те, яку роботу можна отримати? | В какой степени характер влияет на работу, которую можно получить? | إلى أي مدى تؤثر الشخصية على الوظيفة التي يمكن للمرء الحصول عليها؟"
+Får barna med ulike evner ulik undervisning?,Do the children with different abilities get different teaching? | Чи отримують діти з різними здібностями різного навчання? | Дети с разными способностями получают разные преподавания? | هل يحصل الأطفال ذوي القدرات المختلفة على تعليم مختلف؟
+Er det stor forskjell på offentlige og private skoler?,Is there a big difference between public and private schools? | Чи є велика різниця між державними та приватними школами? | Есть ли большая разница между государственными и частными школами? | هل هناك فرق كبير بين المدارس العامة والخاصة؟
+Hva gjør en rektor?,What does a principal do? | Що робить директор? | Что делает директор? | ماذا يفعل المدير؟
+Hva gjør en studieveileder?,What does a study counselor do? | Що робить радник з навчання? | Что делает консультант по изучению? | ماذا يفعل مستشار الدراسة؟

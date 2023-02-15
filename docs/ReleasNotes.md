@@ -2,6 +2,10 @@
 
 - next may be a re-implementation using Svelte not React
 
+## Version 0.10 - 15.02.2023
+
+Easy import of 280 words<br />
+<br />
 ## Version 0.9 - 11.02.2023
 
 Detect .csv if there is 1 comma in the file.<br />

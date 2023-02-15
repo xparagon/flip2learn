@@ -13,14 +13,18 @@ interface FlipWordProps {
 }
 function FlipWord({ check, count,
     handleCheck, handleNo, handleYes, language, words, labels }: FlipWordProps) {
-
+    const [peek, setPeek] = React.useState(false);
     return (
         <div className='flip-word'>
             <div className="box">
                 {words[count].word}
             </div>
-            <div className={'box ' + (check ? 'show-word' : 'hide-word')}
+            <div className={'box ' + (check ? 'show-word ' : 'hide-word ') + ((!check && peek) ? 'peek-word' : '')}
                 onMouseDown={() => handleCheck()}
+                onMouseEnter={() => setPeek(true)}
+                onMouseLeave={() => setPeek(false)}
+                onTouchStart={() => setPeek(true)}
+                onTouchEnd={() => setPeek(false)}
             >
                 {words[count].meaning}
             </div>

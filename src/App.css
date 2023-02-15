@@ -37,6 +37,11 @@
   background-color: black;
 }
 
+.peek-word {
+  background-color: #444;
+}
+
+
 .button-row {
   display: flex;
   justify-content: space-evenly;
