@@ -30,6 +30,11 @@
   justify-content: center;
 }
 
+.translation {
+  font-size: 18px;
+  height: 200px;
+}
+
 .show-word {
   background-color: white;
 }

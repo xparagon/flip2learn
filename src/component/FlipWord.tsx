@@ -19,7 +19,7 @@ function FlipWord({ check, count,
             <div className="box">
                 {words[count].word}
             </div>
-            <div className={'box ' + (check ? 'show-word ' : 'hide-word ') + ((!check && peek) ? 'peek-word' : '')}
+            <div className={'box translation ' + (check ? 'show-word ' : 'hide-word ') + ((!check && peek) ? 'peek-word' : '')}
                 onMouseDown={() => handleCheck()}
                 onMouseEnter={() => setPeek(true)}
                 onMouseLeave={() => setPeek(false)}
