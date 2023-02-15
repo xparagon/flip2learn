@@ -316,7 +316,7 @@ function EditWordlist({
                 </button>
 
                 <button className="small-button" onClick={() => loadCSVFile()}>
-                    +280   {labels.words.at(language - 1)}
+                    + {labels.words.at(language - 1)}
                 </button>
             </div>
 
