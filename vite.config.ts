@@ -2,6 +2,7 @@ import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 import { VitePWA, VitePWAOptions } from "vite-plugin-pwa";
 
+// Context from Code Snippet vite.config.ts:
 const manifestForPlugin: Partial<VitePWAOptions> = {
     registerType: "prompt",
     includeAssets: ["favicon.ico", "apple-touch-icon.png", "masked-icon.svg"],
