@@ -9,7 +9,7 @@ function CountUp({ count, totalWords }: CountUpProps) {
     return (
         <div className='count-up'>
             {count + 1} /&nbsp;
-            {totalWords}
+            {totalWords} words
         </div>
     );
 }
